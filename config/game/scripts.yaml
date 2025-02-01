@@ -1,0 +1,30 @@
+scripts:
+  - name: launch
+    module: plunge
+
+  - name: multiball
+    module: multiball
+
+  - name: multiball_audio
+    module: multiball
+
+  - name: plunge
+    module: plunge
+
+  - name: plunge_audio
+    module: plunge
+
+  - name: sniper
+    module: sniper
+
+  - name: sniper_audio
+    module: sniper
+
+  - name: sniper2
+    module: sniper
+
+  - name: sniper2_audio
+    module: sniper
+
+  - name: sniper_success
+    module: sniper
