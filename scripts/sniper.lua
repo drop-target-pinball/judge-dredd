@@ -1,5 +1,6 @@
 local spin = require('spin')
 local jd = require('jd')
+local message = require('message')
 
 local pub = {}
 
@@ -12,6 +13,13 @@ function pub.sniper_audio()
     spin.play_vocal(jd.SNIPER_IS_SHOOTING_INTO_THE_CROWD_FROM_JOHNSON_TOWER)
     spin.sleep(4)
     spin.play_vocal(jd.SHOOT_SNIPER_TOWER)
+    spin.sleep(1)
+    while true do
+        spin.play_sound(jd.GUN_LOAD_SNIPER)
+        spin.sleep(1.5)
+        spin.play_sound(jd.GUNFIRE)
+        spin.sleep(1.5)
+    end
 end
 
 function pub.sniper2()
@@ -19,10 +27,12 @@ function pub.sniper2()
 end
 
 function pub.sniper2_audio()
+    spin.stop_vocal()
+    spin.play_music(jd.MODE_THEME_1, {no_restart=true})
     spin.play_sound(jd.SUCCESS)
     spin.sleep(2.5)
     spin.play_vocal(jd.SHOOT_SNIPER_TOWER, {notify=true})
-    spin.wait_for(jd.VOCAL_ENDED)
+    spin.wait_for(message.VOCAL_ENDED)
     spin.play_vocal(jd.AAAAAH)
     spin.sleep(3)
     spin.play_vocal(jd.ITS_A_LONG_WAY_DOWN)
@@ -35,6 +45,7 @@ function pub.sniper2_audio()
 end
 
 function pub.sniper_success()
+    spin.stop_vocal()
     spin.play_music(jd.MAIN_THEME)
     spin.play_sound(jd.SNIPER_SPLAT)
     spin.sleep(1)

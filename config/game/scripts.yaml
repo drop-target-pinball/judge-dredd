@@ -16,15 +16,23 @@ scripts:
 
   - name: sniper
     module: sniper
+    group: mode
 
   - name: sniper_audio
     module: sniper
+    group: mode
 
   - name: sniper2
     module: sniper
+    group: mode
+    replace: true
 
   - name: sniper2_audio
     module: sniper
+    group: mode
 
   - name: sniper_success
     module: sniper
+    group: mode
+    replace: true
+
