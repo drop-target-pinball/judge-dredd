@@ -1,0 +1,5 @@
+vars:
+  - name: score
+    value:
+      int: 0
+
