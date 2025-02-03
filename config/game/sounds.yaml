@@ -139,6 +139,7 @@ sounds:
 
   - name: success
     path: jd-pinsound/jingle/000153-accepted_sound/accepted__LEGACY_AUD.wav
+    duck: 0.5
 
   - name: tank_destroyed
     path: jd-pinsound/sfx/000066-little_explosion/little_e__LEGACY_AUD.wav
