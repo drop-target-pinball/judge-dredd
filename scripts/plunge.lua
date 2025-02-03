@@ -15,6 +15,7 @@ function pub.plunge_audio()
 end
 
 function pub.launch()
+    spin.stop_vocal()
     spin.play_music(jd.MAIN_THEME)
     spin.play_sound(jd.MOTORCYCLE_START)
 end
