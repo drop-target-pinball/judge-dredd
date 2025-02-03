@@ -1,5 +1,12 @@
+namespaces:
+  - name: player
+    vars:
+    - name: score
+      kind: !int
+        default: 0
+
 vars:
-  - name: score
-    value:
-      int: 0
+  - name: player1
+    kind: !namespace
+      name: player
 
