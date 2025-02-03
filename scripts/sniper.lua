@@ -22,11 +22,11 @@ function pub.sniper_audio()
     end
 end
 
-function pub.sniper2()
-    spin.run(jd.SNIPER2_AUDIO)
+function pub.sniper_fall()
+    spin.run(jd.SNIPER_FALL_AUDIO)
 end
 
-function pub.sniper2_audio()
+function pub.sniper_fall_audio()
     spin.stop_vocal()
     spin.play_music(jd.MODE_THEME_1, {no_restart=true})
     spin.play_sound(jd.SUCCESS)

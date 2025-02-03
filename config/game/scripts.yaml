@@ -22,12 +22,12 @@ scripts:
     module: sniper
     group: mode
 
-  - name: sniper2
+  - name: sniper_fall
     module: sniper
     group: mode
     replace: true
 
-  - name: sniper2_audio
+  - name: sniper_fall_audio
     module: sniper
     group: mode
 
