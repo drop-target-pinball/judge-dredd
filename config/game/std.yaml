@@ -1,0 +1,4 @@
+std:
+  config:
+    - player
+    - player_4

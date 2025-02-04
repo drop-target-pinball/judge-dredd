@@ -1,12 +1,8 @@
 namespaces:
-  - name: player
-    vars:
-    - name: score
-      kind: !int
-        default: 0
+  player:
+    - { name: selected_chain, kind: !int 1 }
 
-vars:
-  - name: player1
-    kind: !namespace
-      name: player
+
+
+
 
