@@ -1,38 +1,10 @@
 scripts:
-  - name: launch
-    module: plunge
+    multiball:          { module: multiball }
+    multiball_audio:    { module: multiball }
+    sniper:             { module: sniper, group: mode }
+    sniper_audio:       { module: sniper, group: mode }
+    sniper_fall:        { module: sniper, group: mode, replace: true }
+    sniper_fall_audio:  { module: sniper, group: mode }
+    sniper_success:     { module: sniper, group: mode, replace: true }
 
-  - name: multiball
-    module: multiball
-
-  - name: multiball_audio
-    module: multiball
-
-  - name: plunge
-    module: plunge
-
-  - name: plunge_audio
-    module: plunge
-
-  - name: sniper
-    module: sniper
-    group: mode
-
-  - name: sniper_audio
-    module: sniper
-    group: mode
-
-  - name: sniper_fall
-    module: sniper
-    group: mode
-    replace: true
-
-  - name: sniper_fall_audio
-    module: sniper
-    group: mode
-
-  - name: sniper_success
-    module: sniper
-    group: mode
-    replace: true
 

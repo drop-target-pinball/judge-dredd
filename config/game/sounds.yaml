@@ -71,9 +71,6 @@ sounds:
   - name: motorcycle_ramp
     path: jd-pinsound/sfx/000102-motorcycle_noise_2/motorcyc__LEGACY_AUD.wav
 
-  - name: motorcycle_start
-    path: jd-pinsound/sfx/000103-motorcylce_start/motorcyl__LEGACY_AUD.wav
-
   - name: motor_rev
     path: jd-pinsound/sfx/000074-motor_noise/motor_no__LEGACY_AUD.wav
 

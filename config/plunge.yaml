@@ -1,0 +1,18 @@
+scripts:
+    launch:       { module: plunge }
+    plunge:       { module: plunge }
+    plunge_audio: { module: plunge }
+
+vocals:
+  - name: law_master_computer_online_welcome_aboard
+    path: jd-pinsound/voice/000322-law_master_computer_online_welcome_aboard/law_mast__LEGACY_AUD.wav
+  - name: use_fire_button_to_launch_ball
+    path: jd-pinsound/voice/000326-use_fire_button_to_launch_ball/use_fire__LEGACY_AUD.wav
+
+sounds:
+  - name: motorcycle_start
+    path: jd-pinsound/sfx/000103-motorcylce_start/motorcyl__LEGACY_AUD.wav
+
+music:
+  - name: plunge_loop
+    path: jd-pinsound/music/000001-back_ground/back_gro__LEGACY_AUD.wav

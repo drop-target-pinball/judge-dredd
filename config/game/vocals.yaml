@@ -140,9 +140,6 @@ vocals:
 - name: judge_mortis
   path: jd-pinsound/voice/000338-judge_mortis/judge_mo__LEGACY_AUD.wav
 
-- name: law_master_computer_online_welcome_aboard
-  path: jd-pinsound/voice/000322-law_master_computer_online_welcome_aboard/law_mast__LEGACY_AUD.wav
-
 - name: load_planet_for_super_jackpot
   path: jd-pinsound/voice/000301-load_planet_for_super_jackpot/load_pla__LEGACY_AUD.wav
 
@@ -229,9 +226,6 @@ vocals:
 
 - name: two
   path: jd-pinsound/voice/000312-2/2__LEGAC__LEGACY_AUD.wav
-
-- name: use_fire_button_to_launch_ball
-  path: jd-pinsound/voice/000326-use_fire_button_to_launch_ball/use_fire__LEGACY_AUD.wav
 
 - name: wake_up_you_geezer
   path: jd-pinsound/voice/000200-wake_up_you_geezer/wake_up___LEGACY_AUD.wav

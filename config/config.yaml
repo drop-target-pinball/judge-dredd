@@ -1,1 +1,4 @@
 module_name: jd
+
+scripts:
+  init: { module: init }
