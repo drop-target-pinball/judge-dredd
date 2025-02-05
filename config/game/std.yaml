@@ -2,3 +2,4 @@ std:
   config:
     - player
     - player_4
+    - game
