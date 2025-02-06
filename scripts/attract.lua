@@ -6,7 +6,7 @@ local pub = {}
 
 function pub.attract()
     spin.wait(spin.for_eq(std.GAME_ACTIVE, true))
-    spin.run(jd.START_GAME)
+    spin.run(jd.MAIN)
 end
 
 return pub

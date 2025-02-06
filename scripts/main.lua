@@ -15,7 +15,7 @@ function pub.add_player_watch()
     spin.play_vocal(jd.PLAYER_4)
 end
 
-function pub.start_game()
+function pub.main()
     spin.run(jd.PLUNGE)
     spin.run(jd.ADD_PLAYER_WATCH)
 end

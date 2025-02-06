@@ -1,6 +1,6 @@
 scripts:
   add_player_watch:   { module: main }
-  start_game:         { module: main }
+  main:               { module: main }
 
 
 music:
