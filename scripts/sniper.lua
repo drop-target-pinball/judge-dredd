@@ -29,7 +29,7 @@ end
 function pub.sniper_fall_audio()
     spin.stop_vocal()
     spin.play_music(jd.MODE_THEME_1, {no_restart=true})
-    spin.play_sound(jd.SUCCESS)
+    spin.play_sound(jd.SUCCESS_SNIPER)
     spin.sleep(2.5)
     spin.play_vocal(jd.SHOOT_SNIPER_TOWER, {notify=true})
     spin.wait(spin.for_any(message.VOCAL_ENDED))
@@ -51,7 +51,7 @@ function pub.sniper_success()
     spin.sleep(1)
     spin.play_vocal(jd.SNIPER_ELIMINATED)
     spin.sleep(2)
-    spin.play_sound(jd.SUCCESS)
+    spin.play_sound(jd.SUCCESS_SNIPER)
 end
 
 return pub

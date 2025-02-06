@@ -1,0 +1,80 @@
+scripts:
+  add_player_watch:   { module: main }
+  start_game:         { module: main }
+
+
+music:
+  main_theme:
+    path: jd-pinsound/music/000002-main_theme/main_the__LEGACY_AUD-fixed.wav
+
+  mode_theme_1:
+    path: jd-pinsound/music/000004-air_raid/air_raid__LEGACY_AUD.wav
+
+  mode_theme_2:
+    path: jd-pinsound/music/000003-waiting_sound/waiting___LEGACY_AUD.wav
+
+
+vocals:
+  # TODO: find out where this goes
+  dont_move:
+    path: jd-pinsound/voice/000217-don_t_move/don_t_mo__LEGACY.wav
+
+  # TODO: find out where this goes
+  control_to_dredd:
+    path: jd-pinsound/voice/000342-control_to_dredd/control___LEGACY_AUD.wav
+
+  player_2:
+    path: jd-pinsound/voice/000210-player_two/player_t__LEGACY_AUD.wav
+
+  player_3:
+    path: jd-pinsound/voice/000211-player_three/player_three__LEGACY_AUD.wav
+
+  player_4:
+    path: jd-pinsound/voice/000214-player_four/player_f__LEGACY.wav
+
+
+sounds:
+  # TODO: Where does this go?
+  announce:
+    path: jd-pinsound/sfx/000157-wrong/wrong__L__LEGACY_AUD.wav
+
+  ding:
+    path: jd-pinsound/sfx/000101-dring/dring__L__LEGACY_AUD.wav
+
+  left_popper_laser:
+    path: jd-pinsound/sfx/000068-laser_2/laser_2___LEGACY_AUD.wav
+
+  left_post:
+    path: jd-pinsound/sfx/000151-wrong_signal/wrong_si__LEGACY_AUD.wav
+
+  left_shooter_lane_fire:
+    path: jd-pinsound/sfx/000041-fire/fire__LE__LEGACY_AUD.wav
+
+  mystery:
+    path: jd-pinsound/sfx/000124-criquet_sound/criquet___LEGACY_AUD.wav
+
+  motorcycle_ramp:
+    path: jd-pinsound/sfx/000102-motorcycle_noise_2/motorcyc__LEGACY_AUD.wav
+
+  point:
+    path: jd-pinsound/sfx/000106-point/point__L__LEGACY_AUD.wav
+
+  return_lane:
+    path: jd-pinsound/sfx/000122-explosion_3/explosio__LEGACY.wav
+
+  right_post:
+    path: jd-pinsound/sfx/000152-wrong_signal_1/wrong_si__LEGACY_AUD.wav
+
+  right_ramp:
+    path: jd-pinsound/sfx/000095-special_gun_fire/special___LEGACY_AUD.wav
+
+  sling:
+    path: jd-pinsound/sfx/000107-check_point/check_po__LEGACY_AUD.wav
+
+  # FIXME: Is this sound used?
+  sniper_tower:
+    path: jd-pinsound/sfx/000069-guitar_2/guitar_2__LEGACY_AUD.wav
+
+  top_left_ramp:
+    path: jd-pinsound/sfx/000083-extra_sound/extra_so__LEGACY_AUD.wav
+

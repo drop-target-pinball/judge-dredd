@@ -1,0 +1,65 @@
+vocals:
+  if_you_do_the_crime_you_do_the_time:
+    path: jd-pinsound/voice/000229-if_you_do_the_crime_you_do_the_time/if_you_d__LEGACY.wav
+
+  # Warnings
+  warning_for_jaywalking:
+    path: jd-pinsound/voice/000234-warning_for_jaywalking/warning___LEGACY_AUD.wav
+
+  warning_for_littering:
+    path: jd-pinsound/voice/000233-warning_for_littering/warning___LEGACY_AUD.wav
+
+  warning_for_smoking:
+    path: jd-pinsound/voice/000236-warning_for_smoking/warning___LEGACY_AUD.wav
+
+  warning_for_spitting:
+    path: jd-pinsound/voice/000235-warning_for_spitting/warning___LEGACY_AUD.wav
+
+  # Misdemeanors
+  one_year_for_flatulism:
+    path: jd-pinsound/voice/000237-one_year_for_flatulism/one_year__LEGACY_AUD.wav
+
+  two_years_for_speeding:
+    path: jd-pinsound/voice/000239-two_years_for_speeding/two_year__LEGACY_AUD.wav
+
+  three_years_for_vandalism:
+    path: jd-pinsound/voice/000238-three_years_for_vandalism/three_ye__LEGACY_AUD.wav
+
+  ten_years_for_solicitation:
+    path: jd-pinsound/voice/000240-ten_years_for_solicitation/ten_year__LEGACY_AUD.wav
+
+  fifteen_years_for_solicitation:
+    path: jd-pinsound/voice/000242-fifteen_years_for_exibitionism/fifteen___LEGACY_AUD.wav
+
+  # Felonies
+  fifteen_years_for_arson:
+    path: jd-pinsound/voice/000244-fifteen_years_for_arsen/fifteen___LEGACY_AUD.wav
+
+  eighteen_years_for_assault:
+    path: jd-pinsound/voice/000243-eighteen_years_for_assault/eighteen__LEGACY_AUD.wav
+
+  twenty_years_for_stalking:
+    path: jd-pinsound/voice/000241-twenty_years_for_stalking/twenty_y__LEGACY_AUD.wav
+
+  twenty_three_years_for_extortion:
+    path: jd-pinsound/voice/000246-twenty_three_years_for_extortion/twenty_t__LEGACY_AUD.wav
+
+  twenty_five_years_for_auto_theft:
+    path: jd-pinsound/voice/000245-twenty_five_years_for_auto_theft/twenty_f__LEGACY_AUD.wav
+
+  # Class X Felonies
+  thirty_five_years_for_arms_dealing:
+    path: jd-pinsound/voice/000247-thirty_five_years_for_arms_dealing/thirty_f__LEGACY_AUD.wav
+
+  eighty_five_years_for_treason:
+    path: jd-pinsound/voice/000286-eighty_five_years_for_treason/eighty_f__LEGACY_AUD.wav
+
+  ninety_years_for_kidnapping:
+    path: jd-pinsound/voice/000287-ninety_years_for_kidnaping/ninety_y__LEGACY_AUD.wav
+
+  life_for_cannibalism:
+    path: jd-pinsound/voice/000285-life_for_cannibalism/life_for__LEGACY_AUD.wav
+
+  life_for_terrorism:
+    path: jd-pinsound/voice/000258-life_for_terrorism/life_for__LEGACY_AUD.wav
+

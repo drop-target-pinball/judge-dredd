@@ -2,3 +2,9 @@ module_name: jd
 
 scripts:
   init: { module: init }
+
+std:
+  config:
+    - player
+    - player_4
+    - game

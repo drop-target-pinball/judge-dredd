@@ -1,0 +1,7 @@
+music:
+  game_over:
+    path: jd-pinsound/music/000010-end_of_game_match/end_of_g__LEGACY_AUD-fixed.wav
+
+  game_over_matched:
+    path: jd-pinsound/sfx/000161-end_of_game/end_of_g__LEGACY_AUD.wav
+

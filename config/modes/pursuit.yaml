@@ -1,0 +1,36 @@
+vocals:
+  dredd_to_control:
+    path: jd-pinsound/voice/000248-dredd_to_control/dredd_to__LEGACY_AUD.wav
+
+  im_in_pursuit_of_a_stolen_vehicle:
+    path: jd-pinsound/voice/000249-i_m_in_pursuit_of_a_stolen_vehicle/i_m_in_p__LEGACY_AUD.wav
+
+  suspect_got_away:
+    path: jd-pinsound/voice/000252-suspect_got_away/000252-suspect_got_away_AUD.wav
+
+  your_driving_days_are_over_punk:
+    path: jd-pinsound/voice/000209-your_driving_days_are_over_punk/your_dri__LEGACY.wav
+
+
+sounds:
+  motor_rev:
+    path: jd-pinsound/sfx/000074-motor_noise/motor_no__LEGACY_AUD.wav
+
+  police_siren:
+    path: jd-pinsound/sfx/000141-police_horn/police_h__LEGACY_AUD.wav
+
+  pursuit_engine:
+    path: jd-pinsound/sfx/000042-pursuit_mode/pursuit___LEGACY_AUD.wav
+
+  pursuit_explosion:
+    path: jd-pinsound/sfx/000066-little_explosion/little_e__LEGACY_AUD.wav
+
+  pursuit_missile:
+    path: jd-pinsound/sfx/000100-flash_2/flash_2___LEGACY_AUD.wav
+
+  tire_squeal_1:
+    path: jd-pinsound/sfx/000072-rustling_tire/rustling__LEGACY_AUD.wav
+
+  tire_squeal_2:
+    path: jd-pinsound/sfx/000073-rustling_tire_1/rustling_2_LEGACY_AUD.wav
+

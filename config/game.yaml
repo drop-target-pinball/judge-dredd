@@ -1,3 +1,0 @@
-scripts:
-  add_player_watch:   { module: game }
-  start_game:         { module: game }

@@ -1,0 +1,28 @@
+music:
+ bad_impersonator:
+    path: jd-pinsound/music/000005-bad_impersonator/bad_impe__LEGACY_AUD.wav
+
+
+vocals:
+  boo:
+    path: jd-pinsound/sfx/000357-booooo_from_the_crowd/booooo_f__LEGACY_AUD.wav
+
+  civil_disorder_has_erupted_in_heitsch_music_hall:
+    path: jd-pinsound/voice/000347-several_disorder_has_urepted_in_hight_school_musical/several___LEGACY_AUD.wav
+
+  go_home:
+    path: jd-pinsound/voice/000359-go_home/go_home___LEGACY_AUD.wav
+
+  you_suck:
+    path: jd-pinsound/voice/000358-you_suck/you_suck__LEGACY_AUD.wav
+
+
+sounds:
+  bad_impersonator_gunfire:
+    path: jd-pinsound/sfx/000045-sniper/sniper_2___LEGACY_AUD.wav
+
+  bad_impersonator_throw:
+    path: jd-pinsound/sfx/000052-bad_inpersonator/bad_inpe__LEGACY_AUD.wav
+
+  shock:
+    path: jd-pinsound/sfx/000049-bad_inpersonator/bad_inpe__LEGACY_AUD.wav

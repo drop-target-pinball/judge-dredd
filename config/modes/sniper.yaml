@@ -1,0 +1,41 @@
+scripts:
+  sniper:             { module: sniper, group: mode }
+  sniper_audio:       { module: sniper, group: mode }
+  sniper_fall:        { module: sniper, group: mode, replace: true }
+  sniper_fall_audio:  { module: sniper, group: mode }
+  sniper_success:     { module: sniper, group: mode, replace: true }
+
+vocals:
+  aaaaah:
+    path: jd-pinsound/voice/000282-aaaaaaaaaaaaaaaaaaaah/aaaaaaaa__LEGACY_AUD.wav
+
+  i_can_see_my_house_from_here:
+    path: jd-pinsound/voice/000284-i_can_see_my_house_from_here/i_can_se__LEGACY_AUD.wav
+
+  its_a_long_way_down:
+    path: jd-pinsound/voice/000283-it_s_a_long_way_down/it_s_a_l__LEGACY_AUD.wav
+
+  shoot_sniper_tower:
+    path: jd-pinsound/voice/000356-shoot_sniper_tower/shoot_sn__LEGACY_AUD.wav
+
+  sniper_eliminated:
+    path: jd-pinsound/voice/000253-sniper_eliminated/sniper_e__LEGACY_AUD.wav
+
+  sniper_is_shooting_into_the_crowd_from_johnson_tower:
+    path: jd-pinsound/voice/000346-sniper_is_shooting_into_crowd_from_johnson_tower/sniper_i__LEGACY.wav
+
+
+sounds:
+  gun_load_sniper:
+    path: jd-pinsound/sfx/000132-gun_loading_1/gun_load__LEGACY.wav
+
+  gunfire:
+    path: jd-pinsound/sfx/000133-gun_fire/gun_fire__LEGACY_AUD.wav
+
+  sniper_splat:
+    path: jd-pinsound/sfx/000076-hurt_3/hurt_3____LEGACY_AUD.wav
+
+  success_sniper:
+    path: jd-pinsound/jingle/000153-accepted_sound/accepted__LEGACY_AUD.wav
+    duck: 0.5
+

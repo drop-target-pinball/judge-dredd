@@ -1,0 +1,54 @@
+scripts:
+    multiball:          { module: multiball }
+    multiball_audio:    { module: multiball }
+
+music:
+  multiball_intro:
+    path: jd-pinsound/music/000009-multi_ball/multi_ba__LEGACY_AUD-intro.wav
+
+  multiball:
+    path: jd-pinsound/music/000009-multi_ball/multi_ba__LEGACY_AUD-loop.wav
+
+
+vocals:
+  contained:
+    path: jd-pinsound/voice/000339-contained/containe__LEGACY_AUD.wav
+
+  death:
+    path: jd-pinsound/voice/000340-dead/dead__LE__LEGACY_AUD.wav
+
+  death_laughing:
+    path: jd-pinsound/voice/000281-ah_ah_ah_ah_ah_/ah_ah_ah__LEGACY_AUD.wav
+
+  greetings_judge_anderson:
+    path: jd-pinsound/voice/000271-greetings_judge_anderson/greeting__LEGACY_AUD.wav
+
+  i_will_be_back:
+    path: jd-pinsound/voice/000334-i_will_be_back/i_will_b__LEGACY_AUD.wav
+
+  jackpot_is_lit:
+    path: jd-pinsound/voice/000328-jackpot_is_lite/jackpot___LEGACY_AUD.wav
+
+  judge_fear:
+    path: jd-pinsound/voice/000337-judge_fear/judge_fe__LEGACY_AUD.wav
+
+  judge_fire:
+    path: jd-pinsound/voice/000336-judge_fire/judge_fi__LEGACY_AUD.wav
+
+  judge_mortis:
+    path: jd-pinsound/voice/000338-judge_mortis/judge_mo__LEGACY_AUD.wav
+
+  my_name_is_death:
+    path: jd-pinsound/voice/000275-my_name_is_dead/my_name___LEGACY_AUD.wav
+
+  prepare_to_face_the_immortal:
+    path: jd-pinsound/voice/000280-prepare_to_face_the_immortal/prepare___LEGACY_AUD.wav
+
+  you_are_doomed:
+    path: jd-pinsound/voice/000273-you_are_doomed/you_are___LEGACY_AUD.wav
+
+
+sounds:
+  multiball_jackpot:
+    path: jd-pinsound/jingle/000155-special_option/special___LEGACY_AUD.wav
+

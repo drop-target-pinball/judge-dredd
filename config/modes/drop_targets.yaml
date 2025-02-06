@@ -1,0 +1,15 @@
+sounds:
+  drop_target_hit_1:
+    path: jd-pinsound/sfx/000096-laser_3/laser_3___LEGACY_AUD.wav
+
+  drop_target_hit_2:
+    path: jd-pinsound/sfx/000097-laser_4/laser_4___LEGACY_AUD.wav
+
+  drop_target_hit_3:
+    path: jd-pinsound/sfx/000098-laser_4/laser_4__2_LEGACY_AUD.wav
+
+  drop_target_hit_4:
+    path: jd-pinsound/sfx/000099-laser_5/laser_5___LEGACY_AUD.wav
+
+  drop_target_hit_5:
+    path: jd-pinsound/sfx/000100-flash_2/flash_2___LEGACY_AUD.wav

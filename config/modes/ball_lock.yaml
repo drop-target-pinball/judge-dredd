@@ -1,0 +1,14 @@
+vocals:
+  dimensional_lock_one:
+    path: jd-pinsound/voice/000331-dimensional_lock_one/dimensio__LEGACY_AUD.wav
+
+  dimensional_lock_two:
+    path: jd-pinsound/voice/000332-dimensional_lock_two/dimensio__LEGACY_AUD.wav
+
+  dimensional_globe_activated:
+    path: jd-pinsound/voice/000321-dimensional_globe_activated/dimensio__LEGACY_AUD.wav
+
+
+sounds:
+  ball_lock:
+    path: jd-pinsound/sfx/000159-option_1/option_1__LEGACY_AUD.wav

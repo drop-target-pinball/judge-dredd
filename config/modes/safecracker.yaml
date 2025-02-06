@@ -1,0 +1,35 @@
+vocals:
+  dinner_time:
+    path: jd-pinsound/voice/000208-aah_diner_time/aah_dine__LEGACY.wav
+
+  open_that_safe:
+    path: jd-pinsound/voice/000201-open_that_safe/000201-open_that_safe_AUD.wav
+
+  ill_be_back:
+    path: jd-pinsound/voice/000229-if_you_do_the_crime_you_do_the_time/if_you_d__LEGACY.wav
+
+  wake_up_you_geezer:
+    path: jd-pinsound/voice/000200-wake_up_you_geezer/wake_up___LEGACY_AUD.wav
+
+
+sounds:
+  safecracker_explosion:
+    path: jd-pinsound/sfx/000093-big_explosion/big_expl__LEGACY_AUD.wav
+
+  safecracker_gunfire_1:
+    path: jd-pinsound/sfx/000040-manhunt_mode/manhunt___LEGACY_AUD.wav
+
+  safecracker_gunfire_2:
+    path: jd-pinsound/sfx/000085-laser_fire/laser_fi__LEGACY_AUD.wav
+
+  safecracker_gunfire_3:
+    path: jd-pinsound/sfx/000086-little_laser_fire/little_l__LEGACY_AUD.wav
+
+  safecracker_laser_fire:
+    path: jd-pinsound/sfx/000095-special_gun_fire/special___LEGACY_AUD.wav
+
+  safecracker_tank_fire:
+    path: jd-pinsound/sfx/000041-fire/fire__LE__LEGACY_AUD.wav
+
+  snore:
+    path: jd-pinsound/sfx/000203-criquet_1/criquet___LEGACY_AUD.wav

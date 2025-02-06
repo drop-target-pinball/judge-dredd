@@ -1,0 +1,27 @@
+vocals:
+  freeze:
+    path: jd-pinsound/voice/000216-freeze/freeze____LEGACY.wav
+
+  or_i_will_shoot:
+    path: jd-pinsound/voice/000213-or_i_will_shoot/or_i_wil__LEGACY_AUD.wav
+
+  shoot_left_ramp:
+    path: jd-pinsound/voice/000353-shoot_left_ramp/shoot_le__LEGACY_AUD.wav
+
+  stop:
+    path: jd-pinsound/voice/000212-stop/stop__LE__LEGACY_AUD.wav
+
+  suspicious_character_reported_in_eugene_block:
+    path: jd-pinsound/voice/000348-the_special_caracter_reported_are_using_block/the_spec__LEGACY_AUD.wav
+
+
+sounds:
+  manhunt_auto_fire:
+    path: jd-pinsound/sfx/000040-manhunt_mode/manhunt___LEGACY_AUD.wav
+
+  manhunt_single_fire:
+    path: jd-pinsound/sfx/000133-gun_fire/gun_fire__LEGACY_AUD.wav
+
+  walking:
+    path: jd-pinsound/sfx/000146-walking_sound/walking___LEGACY_AUD.wav
+

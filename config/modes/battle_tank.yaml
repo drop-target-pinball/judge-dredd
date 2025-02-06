@@ -1,0 +1,24 @@
+vocals:
+  battle_tank_damage_at:
+    path: jd-pinsound/voice/000323-battle_tank_damage_at/battle_t__LEGACY_AUD.wav
+
+  battle_tank_destroyed:
+    path: jd-pinsound/voice/000257-battle_tank_destroyed/battle_t__LEGACY.wav
+
+  battle_tank_sighted_in_sector_six:
+    path: jd-pinsound/voice/000345-battle_tank_sighted_in_sector_six/battle_t__LEGACY_AUD.wav
+
+  sixty_percent:
+    path: jd-pinsound/voice/000324-60_percent/60_perce__LEGACY_AUD.wav
+
+  twenty_five_percent:
+    path: jd-pinsound/voice/000306-twenty_five_percent/twenty_f__LEGACY_AUD.wav
+
+
+sounds:
+  tank_destroyed:
+    path: jd-pinsound/sfx/000066-little_explosion/little_e__LEGACY_AUD.wav
+
+  tank_fire:
+    path: jd-pinsound/sfx/000066-little_explosion/little_e__LEGACY_AUD.wav
+

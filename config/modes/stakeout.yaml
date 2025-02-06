@@ -1,0 +1,19 @@
+vocals:
+  im_staking_out_a_crack_house_in_sector_twenty_three:
+    path: jd-pinsound/voice/000259-i_m_staking_out_a_crack_house_in_sector_23/i_m_stak__LEGACY_AUD.wav
+
+  interesting:
+   path: jd-pinsound/voice/000222-interesting/interest__LEGACY.wav
+
+  i_wonder_whats_down_there:
+    path: jd-pinsound/voice/000221-i_wonder_what_s_down_there/i_wonder__LEGACY.wav
+
+  i_wonder_whats_over_there:
+    path: jd-pinsound/voice/000220-i_wonder_whats_over_there/000220-I_wonder_whats_over_there_AUD.wav
+
+  shoot_right_ramp:
+    path: jd-pinsound/voice/000352-shoot_right_ramp/shoot_ri__LEGACY_AUD.wav
+
+  success_stakeout:
+    path: jd-pinsound/jingle/000153-accepted_sound/accepted__LEGACY_AUD.wav
+    duck: 0.5

@@ -1,0 +1,45 @@
+vocals:
+  all_reactors_approaching_critical_mass:
+    path: jd-pinsound/voice/000319-all_reactors_approaching_critical_mass/all_reac__LEGACY_AUD.wav
+
+  all_reactors_stabilized:
+    path: jd-pinsound/voice/000317-all_reactors_stabilized/all_reac__LEGACY_AUD.wav
+
+  containment_failure_at_three_meter_island:
+    path: jd-pinsound/voice/000344-containment_failure_at_three_meter_island/containm__LEGACY_AUD.wav
+
+  four:
+    path: jd-pinsound/voice/000310-4/4__LEGAC__LEGACY_AUD.wav
+
+  meltdown_is_imminent:
+    path: jd-pinsound/voice/000318-meltdown_is_imminent/meltdown__LEGACY_AUD.wav
+
+  one:
+    path: jd-pinsound/voice/000313-1/1__LEGAC__LEGACY_AUD.wav
+
+  reactor_one_stabilized:
+    path: jd-pinsound/voice/000315-reactor_one_stabilized/reactor___LEGACY_AUD.wav
+
+  reactor_two_stabilized:
+    path: jd-pinsound/voice/000316-reactor_two_stabilized/reactor___LEGACY_AUD.wav
+
+  three:
+    path: jd-pinsound/voice/000311-3/3__LEGAC__LEGACY_AUD.wav
+
+  three_meter_island_is_secured:
+    path: jd-pinsound/voice/000255-peview_around_is_secured/peview_a__LEGACY_AUD.wav
+
+  two:
+    path: jd-pinsound/voice/000312-2/2__LEGAC__LEGACY_AUD.wav
+
+
+sounds:
+  meltdown_cracking:
+    path: jd-pinsound/sfx/000135-wood_broken/wood_bro__LEGACY.wav
+
+  meltdown_explosion:
+    path: jd-pinsound/sfx/000128-very_big_explosion/very_big__LEGACY_AUD.wav
+
+  meltdown_klaxon:
+    path: jd-pinsound/sfx/000134-alarm/alarm__L__LEGACY_AUD.wav
+

@@ -1,0 +1,7 @@
+sounds:
+  bonus:
+    path: jd-pinsound/sfx/000063-piano_1/piano_1___LEGACY_AUD.wav
+
+  ball_lost:
+    path: jd-pinsound/sfx/000112-ball_lost/ball_los__LEGACY_AUD.wav
+

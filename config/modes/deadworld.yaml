@@ -1,0 +1,56 @@
+music:
+  attack_from_mars:
+    path: afm-pinsound/music/3654998065-main_theme/main_the__LEGACY.wav
+
+  deadworld_complete:
+    path: afm-pinsound/music/3493132690-attract_mode/attract___LEGACY.wav
+
+  super_game:
+    path: jd-pinsound/music/000006-weappon_sound/weappon___LEGACY_AUD-loop1.wav
+
+  super_game_2:
+    path: jd-pinsound/music/000006-weappon_sound/weappon___LEGACY_AUD-loop2.wav
+
+
+vocals:
+  and_welcome_to_super_game:
+    path: jd-pinsound/voice/000289-and_welcome_to_super_game/and_welc__LEGACY_AUD.wav
+
+  cant_we_just_be_friends:
+    path: afm-pinsound/voice/3534037800-can_t_we_just_be_friends_/can_t_we__LEGACY.wav
+
+  congratulations:
+    path: jd-pinsound/voice/000276-congratulations/congratu__LEGACY_AUD.wav
+
+  deadworld_has_materialized:
+    path: jd-pinsound/voice/000300-deadworld_has_materialized/deadworl__LEGACY_AUD.wav
+
+  deadworld_defensive_barriers_are_down_fire_at_will:
+    path: jd-pinsound/voice/000330-deadworld_defensive_barriers_are_down_fire_at_will/deadworl__LEGACY_AUD.wav
+
+  deadworld_defensive_barriers_at_full_power:
+    path: jd-pinsound/voice/000329-deadworld_defensive_barriers_at_full_power/deadworl__LEGACY_AUD.wav
+
+  go_for_the_hundred_million:
+    path: jd-pinsound/voice/000349-go_for_the_hundred_million/go_for_t__LEGACY_AUD.wav
+
+  im_anita_mann:
+    path: jd-pinsound/voice/000288-i_m_a_need_a_man/i_m_a_ne__LEGACY_AUD.wav
+
+  load_planet_for_super_jackpot:
+    path: jd-pinsound/voice/000301-load_planet_for_super_jackpot/load_pla__LEGACY_AUD.wav
+
+  one_hundred_million:
+    path: jd-pinsound/voice/000297-100_million/100_mill__LEGACY_AUD.wav
+
+  super_game_has_ended:
+    path: jd-pinsound/voice/000351-super_game_has_ended/super_ga__LEGACY_AUD.wav
+
+
+sounds:
+  applause:
+    path: afm-pinsound/sfx/0107231306-sameas-000954-applause_for_ruling_universe/applause__LEGACY.wav
+
+
+
+

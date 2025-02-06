@@ -1,8 +1,0 @@
-namespaces:
-  player:
-    - { name: selected_chain, kind: !int 1 }
-
-
-
-
-
