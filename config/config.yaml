@@ -4,7 +4,27 @@ scripts:
   init: { module: init }
 
 std:
-  config:
-    - player
-    - player_4
-    - game
+  - player
+  - player_4
+  - game
+
+video:
+  dmd:
+    width: 128
+    height: 32
+    layers: 2
+
+sdl:
+  audio:
+    output: mono
+    channels: 4
+    with_mp3: true
+    with_ogg: true
+  dmd:
+    video: dmd
+
+
+
+
+
+
