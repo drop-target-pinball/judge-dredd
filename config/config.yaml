@@ -4,6 +4,7 @@ scripts:
   init: { module: init }
 
 std:
+  - diag
   - player
   - player_4
   - game
@@ -12,7 +13,7 @@ video:
   dmd:
     width: 128
     height: 32
-    layers: 2
+    layers: 1
 
 sdl:
   audio:
