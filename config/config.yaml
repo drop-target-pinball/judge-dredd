@@ -4,16 +4,15 @@ scripts:
   init: { module: init }
 
 std:
-  - diag
-  - player
-  - player_4
   - game
+  - player_4
+  - service
 
 video:
   dmd:
     width: 128
     height: 32
-    layers: 1
+    layers: 2
 
 sdl:
   audio:
