@@ -1,4 +1,5 @@
 fonts:
   pf_tempesta_five_compressed_bold:
     path: pf-fonts/pf_tempesta_five_compressed_bold.ttf
+    point_size: 8
 

@@ -1,0 +1,7 @@
+scripts:
+  boot: { module: boot, group: main }
+
+music:
+  boot:
+    path: boot/boot.ogg
+
