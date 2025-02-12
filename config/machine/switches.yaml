@@ -475,4 +475,40 @@ switches:
     unused: true
 
 
+matrices:
+  switch:
+    rows:
+      - - !wire white-brown
+        - !jumper J209-1
+      - - !wire white-red
+        - !jumper J209-2
+      - - !wire white-orange
+        - !jumper J209-3
+      - - !wire white-yellow
+        - !jumper J209-4
+      - - !wire white-green
+        - !jumper J209-5
+      - - !wire white-blue
+        - !jumper J209-7
+      - - !wire white-violet
+        - !jumper J209-8
+      - - !wire white-gray
+        - !jumper J209-9
+    columns:
+      - - !wire green-brown
+        - !jumper J207-1
+      - - !wire green-red
+        - !jumper J207-2
+      - - !wire green-orange
+        - !jumper J207-3
+      - - !wire green-yellow
+        - !jumper J207-4
+      - - !wire green-black
+        - !jumper J207-5
+      - - !wire green-blue
+        - !jumper J207-6
+      - - !wire green-violet
+        - !jumper J207-7
+      - - !wire green-gray
+        - !jumper J207-9
 
