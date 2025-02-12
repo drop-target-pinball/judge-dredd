@@ -1,2 +1,8 @@
 scripts:
-  attract: { module: attract }
+  attract:              { module: attract, group: main, replace: true }
+  attract_slide_show:   { module: attract, group: main }
+  attract_game_over:    { module: attract, group: main }
+  attract_dtp_presents: { module: attract, group: main }
+  attract_jd_remix:     { module: attract, group: main }
+  attract_payment:      { module: attract, group: main }
+  attract_gc:           { module: attract, group: main }

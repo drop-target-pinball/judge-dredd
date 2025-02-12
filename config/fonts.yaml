@@ -1,5 +1,13 @@
 fonts:
-  pf_tempesta_five_compressed_bold:
+  pf_arma_five_8:
+    path: pf-fonts/pf_arma_five.ttf
+    point_size: 8
+
+  pf_ronda_seven_bold_8:
+    path: pf-fonts/pf_ronda_seven_bold.ttf
+    point_size: 8
+
+  pf_tempesta_five_compressed_bold_8:
     path: pf-fonts/pf_tempesta_five_compressed_bold.ttf
     point_size: 8
 

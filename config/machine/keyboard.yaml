@@ -1,0 +1,24 @@
+keyboard:
+  - key: left
+    down: !switch_updated
+      name: left_flipper_button
+      active: true
+    up: !switch_updated
+      name: left_flipper_button
+      active: false
+
+  - key: right
+    down: !switch_updated
+      name: right_flipper_button
+      active: true
+    up: !switch_updated
+      name: right_flipper_button
+      active: false
+
+  - key: enter
+    down: !switch_updated
+      name: start_button
+      active: true
+    up: !switch_updated
+      name: start_button
+      active: false

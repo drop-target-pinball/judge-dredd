@@ -1,5 +1,5 @@
 scripts:
-  boot: { module: boot, group: main }
+  boot: { module: boot, group: main, replace: true }
 
 music:
   boot:
