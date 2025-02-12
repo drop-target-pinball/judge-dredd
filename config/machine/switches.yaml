@@ -1,0 +1,478 @@
+switches:
+  left_coin_slot:
+    address: direct/1
+    name: Left Coin Slot
+    sort_name: Coin Slot, Left
+    manual_name: Left Coin Chute
+    components:
+    - !wire orange-brown
+    - !jumper J205-1
+
+  center_coin_slot:
+    address: direct/2
+    name: Center Coin Slot
+    sort_name: Coin Slot, Center
+    manual_name: Center Coin Chute
+    components:
+    - !wire orange-red
+    - !jumper J205-2
+
+  right_coin_slot:
+    address: direct/3
+    name: Right Coin Slot
+    sort_name: Coin Slot, Right
+    manual_name: Right Coin Chute
+    components:
+    - !wire orange-black
+    - !jumper J205-3
+
+  other_coin_slot:
+    address: direct/4
+    name: Other Coin Slot
+    sort_name: Coin Slot, Other
+    manual_name: 4th Coin Chute
+    components:
+    - !wire orange-yellow
+    - !jumper J205-4
+
+  escape_button:
+    address: direct/5
+    name: Escape Button
+    manual_name: Service Credits / Escape
+    components:
+    - !wire orange-green
+    - !jumper J205-6
+
+  down_button:
+    address: direct/6
+    name: Down Button
+    manual_name: Volume Down / Down
+    components:
+    - !wire orange-blue
+    - !jumper J205-7
+
+  up_button:
+    address: direct/7
+    name: Up Button
+    manual_name: Volume Up/ Up
+    components:
+    - !wire orange-violet
+    - !jumper J205-8
+
+  enter_button:
+    address: direct/8
+    name: Enter Button
+    manual_name: Begin Test / Enter
+    components:
+    - !wire orange-gray
+    - !jumper J205-9
+
+  right_flipper_eos:
+    address: flipper/1
+    name: Right Flipper EOS
+    sort_name: Flipper EOS, Right
+    manual_name: Right Flipper End of Stroke
+    components:
+    - !wire black-green
+    - !jumper J906-1
+
+  right_flipper_button:
+    address: flipper/2
+    normally: open
+    name: Right Flipper Button
+    sort_name: Flipper Button, Right
+    manual_name: Right Flipper Opto
+    components:
+    - !wire blue-violet
+    - !jumper J905-1
+
+  left_flipper_eos:
+    address: flipper/3
+    name: Left Flipper EOS
+    sort_name: Flipper EOS, Left
+    manual_name: Left Flipper End of Stroke
+    components:
+    - !wire black-blue
+    - !jumper J906-3
+
+  left_flipper_button:
+    address: flipper/4
+    normally: open
+    name: Left Flipper Button
+    sort_name: Flipper Button, Left
+    manual_name: Left Flipper Opto
+    components:
+    - !wire blue-gray
+    - !jumper J905-2
+
+  upper_right_flipper_eos:
+    address: flipper/5
+    name: Upper Right Flipper EOS
+    sort_name: Flipper EOS, Upper Right
+    manual_name: Upper Right Flipper End of Stroke
+    components:
+    - !wire black-violet
+    - !jumper J906-4
+
+  upper_right_flipper_button:
+    address: flipper/6
+    normally: open
+    name: Upper Right Flipper Button
+    sort_name: Flipper Button, Upper Right
+    manual_name: Upper Right Flipper Opto
+    components:
+    - !wire black-yellow
+    - !jumper J905-3
+
+  upper_left_flipper_eos:
+    address: flipper/7
+    name: Upper Left Flipper EOS
+    sort_name: Upper Flipper EOS, Left
+    manual_name: Upper Left Flipper End of Stroke
+    components:
+    - !wire black-gray
+    - !jumper J906-5
+
+  upper_left_flipper_button:
+    address: flipper/8
+    normally: open
+    name: Upper Left Flipper Button
+    sort_name: Flipper Button, Upper Left
+    manual_name: Upper Left Flipper Opto
+    components:
+    - !wire black-blue
+    - !jumper J905-5
+
+  left_fire_button:
+    address: matrix/1/1
+    name: Left Fire Button
+    sort_name: Fire Button, Left
+
+  right_fire_button:
+    address: matrix/1/2
+    name: Right Fire Button
+    sort_name: Fire Button, Right
+
+  start_button:
+    address: matrix/1/3
+    name: Start Button
+    manual_name: Credit (Start)
+
+  tilt:
+    address: matrix/1/4
+    name: Title
+    manual_name: Plumb Bob Tilt
+
+  left_shooter_lane:
+    address: matrix/1/5
+    name: Left Shooter Lane
+    sort_name: Shooter Lane, Left
+    manual_name: Left Shoot Lane
+
+  left_outlane:
+    address: matrix/1/6
+    name: Left Outlane
+    sort_name: Outlane, Left
+
+  left_return_lane:
+    address: matrix/1/7
+    name: Left Return Lane
+    sort_name: Return Lane, Left
+
+  bank_targets:
+    address: matrix/1/8
+    name: Bank Targets
+    manual_name: 3-Bank Targets
+
+  slam_tilt:
+    address: matrix/2/1
+    name: Slam Tilt
+    sort_name: Tilt, Slam
+
+  coin_door_open:
+    address: matrix/2/2
+    normally: closed
+    name: Coin Door Open
+    manual_name: Front Door Open
+
+  ticket_dispenser:
+    address: matrix/2/3
+    name: S23
+    unused: true
+
+  switch_24:
+    address: matrix/2/4
+    name: S24
+    unused: true
+
+  top_right_post:
+    address: matrix/2/5
+    name: Top Right Post
+    sort_name: Post, Top Right
+
+  captive_ball_1:
+    address: matrix/2/6
+    name: Captive Ball 1
+
+  mystery:
+    address: matrix/2/7
+    name: Mystery
+
+  switch_28:
+    address: matrix/2/8
+    name: S28
+    unused: true
+
+  extra_ball_button:
+    address: matrix/3/1
+    name: Extra Ball Button
+    manual_name: Buy-In (Extra Ball)
+
+  switch_32:
+    address: matrix/3/2
+    name: S32
+    unused: true
+
+  outer_left_loop:
+    address: matrix/3/3
+    name: Outer Left Loop
+    sort_name: Loop, Outer Left
+    manual_name: Left Rollover
+
+  inner_right_return_lane:
+    address: matrix/3/4
+    name: Inner Right Return Lane
+    sort_name: Return Lane, Inner Right
+    manual_name: Inside Right Return
+
+  inner_loop:
+    address: matrix/3/5
+    name: Inner Loop
+    sort_name: Loop, Inner
+    manual_name: Top Center Rollover
+
+  left_post:
+    address: matrix/3/6
+    name: Left Post
+    sort_name: Post, Left
+    manual_name: Left Score Post
+
+  subway_enter_1:
+    address: matrix/3/7
+    name: Subway Enter 1
+
+  subway_enter_2:
+    address: matrix/3/8
+    name: Subway Enter 2
+
+  right_shooter_lane:
+    address: matrix/4/1
+    name: Right Shooter Lane
+    sort_name: Shooter Lane, Right
+    manual_name: Right Ball Shooter
+
+  right_outlane:
+    address: matrix/4/2
+    name: Right Outlane
+    sort_name: Outlane, Right
+
+  outer_right_return_lane:
+    address: matrix/4/3
+    name: Outer Right Return Lane
+    sort_name: Return Lane, Outer Right
+    manual_name: Outside Right Return
+
+  super_game_button:
+    address: matrix/4/4
+    name: Super Game Button
+
+  switch_45:
+    address: matrix/4/5
+    name: S45
+    unused: true
+
+  switch_46:
+    address: matrix/4/6
+    name: S46
+    unused: true
+
+  switch_47:
+    address: matrix/4/67
+    name: S47
+    unused: true
+
+  switch_48:
+    address: matrix/4/8
+    name: S48
+    unused: true
+
+  left_sling:
+    address: matrix/5/1
+    name: Left Sling
+    sort_name: Sling, Left
+
+  right_sling:
+    address: matrix/5/2
+    name: Right Sling
+    sort_name: Sling, Right
+
+  captive_ball_2:
+    address: matrix/5/3
+    name: Captive Ball 2
+
+  drop_target_j:
+    address: matrix/5/4
+    normally: closed
+    name: Drop Target J
+
+  drop_target_u:
+    address: matrix/5/5
+    normally: closed
+    name: Drop Target U
+
+  drop_target_d:
+    address: matrix/5/6
+    normally: closed
+    name: Drop Target D
+
+  drop_target_g:
+    address: matrix/5/7
+    normally: closed
+    name: Drop Target G
+
+  drop_target_e:
+    address: matrix/5/8
+    normally: closed
+    name: Drop Target E
+
+  globe_position_1:
+    address: matrix/6/1
+    name: Globe Position 1
+
+  globe_exit:
+    address: matrix/6/2
+    normally: closed
+    name: Globe Exit
+    manual_name: Crane Exit
+
+  planet_enter:
+    address: matrix/6/3
+    normally: closed
+    name: Planet Enter
+    manual_name: Left Ramp to Lock
+
+  left_ramp_exit:
+    address: matrix/6/4
+    normally: closed
+    name: Left Ramp Exit
+    sort_name: Ramp, Left Exit
+
+  switch_65:
+    address: matrix/6/5
+    name: S65
+    unused: true
+
+  center_ramp_exit:
+    address: matrix/6/6
+    normally: closed
+    name: Center Ramp Exit
+    sort_name: Ramp, Center Exit
+
+  left_ramp_enter:
+    address: matrix/6/7
+    normally: closed
+    name: Left Ramp Enter
+    sort_name: Ramp, Left Enter
+
+  captive_ball_3:
+    address: matrix/6/8
+    name: Captive Ball 3
+
+  arm_far_right:
+    address: matrix/7/1
+    name: Arm Far Right
+    manual_name: Magnet Over Ring
+
+  outer_loop_right:
+    address: matrix/7/2
+    normally: open
+    name: Outer Loop Right
+    sort_name: Loop, Outer Right
+    manual_name: Top Right Opto
+
+  left_popper:
+    address: matrix/7/3
+    normally: closed
+    name: Left Popper
+    sort_name: Popper, Left
+
+  right_popper:
+    address: matrix/7/4
+    normally: closed
+    name: Right Popper
+    sort_name: Popper, Right
+
+  top_ramp_exit:
+    address: matrix/7/5
+    normally: closed
+    name: Top Ramp Exit
+    sort_name: Ramp, Top Exit
+
+  right_ramp_exit:
+    address: matrix/7/6
+    normally: closed
+    name: Right Ramp Exit
+    sort_name: Ramp, Right Exit
+
+  globe_position_2:
+    address: matrix/7/7
+    name: Globe Position 2
+
+  switch_78:
+    address: matrix/7/8
+    name: S78
+    unused: true
+
+  trough_1:
+    address: matrix/8/1
+    normally: closed
+    name: Trough 1
+
+  trough_2:
+    address: matrix/8/2
+    normally: closed
+    name: Trough 2
+
+  trough_3:
+    address: matrix/8/3
+    normally: closed
+    name: Trough 3
+
+  trough_4:
+    address: matrix/8/4
+    normally: closed
+    name: Trough 4
+
+  trough_5:
+    address: matrix/8/5
+    normally: closed
+    name: Trough 5
+
+  trough_6:
+    address: matrix/8/6
+    normally: closed
+    name: Trough 6
+
+  trough_jam:
+    address: matrix/8/7
+    normally: closed
+    name: Trough Jam
+    manual_name: Top Trough
+
+  switch_88:
+    address: matrix/8/8
+    name: S88
+    unused: true
+
+
+
