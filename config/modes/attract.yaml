@@ -1,8 +1,12 @@
+run_groups:
+  attract:        { parent: "main" }
+  attract_slide:  { parent: "attract" }
+
 scripts:
-  attract:              { module: attract, group: main, replace: true }
-  attract_slide_show:   { module: attract, group: main }
-  attract_game_over:    { module: attract, group: main }
-  attract_dtp_presents: { module: attract, group: main }
-  attract_jd_remix:     { module: attract, group: main }
-  attract_payment:      { module: attract, group: main }
-  attract_gc:           { module: attract, group: main }
+  attract:              { module: attract, group: attract, replace: true }
+  attract_slide_show:   { module: attract, group: attract }
+  attract_game_over:    { module: attract, group: attract_slide, replace: true }
+  attract_dtp_presents: { module: attract, group: attract_slide, replace: true }
+  attract_jd_remix:     { module: attract, group: attract_slide, replace: true }
+  attract_payment:      { module: attract, group: attract_slide, replace: true }
+  attract_gc:           { module: attract, group: attract_slide, replace: true }

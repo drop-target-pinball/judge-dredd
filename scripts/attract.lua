@@ -24,15 +24,34 @@ function pub.attract_slide_show()
 
     local next = function()
         curr = curr + 1
-        if curr > 5 then
+        if curr > n then
             curr = 1
+        end
+    end
+
+    local prev = function()
+        curr = curr - 1
+        if curr < 1 then
+            curr = n
         end
     end
 
     while true do
         spin.run(slides[curr])
-        spin.sleep(4)
-        next()
+        local kind, msg = spin.wait(
+            spin.for_time(4),
+            spin.for_switch(jd.LEFT_FLIPPER_BUTTON),
+            spin.for_switch(jd.RIGHT_FLIPPER_BUTTON)
+        )
+        if kind == jd.SWITCH_UPDATED then
+            if msg.name == jd.LEFT_FLIPPER_BUTTON then
+                prev()
+            else
+                next()
+            end
+        else
+            next()
+        end
     end
 end
 

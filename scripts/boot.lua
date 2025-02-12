@@ -11,7 +11,9 @@ function pub.boot()
     gfx.draw_text_y(10, "V" .. string.upper(spin.runtime.prog_version))
     gfx.draw_text_y(20, string.upper(spin.runtime.prog_date))
     spin.play_music(jd.BOOT, {loops=1})
-    spin.sleep(8)
+
+    spin.wait(spin.for_time(8), spin.for_switch(jd.START_BUTTON))
+    spin.stop_music()
     spin.run(jd.ATTRACT)
 end
 

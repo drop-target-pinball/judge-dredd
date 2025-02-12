@@ -4,6 +4,8 @@ local jd = require('jd')
 local pub = {}
 
 function pub.plunge()
+    local gfx = spin.gfx(jd.DMD)
+    gfx.clear()
     spin.run(jd.PLUNGE_AUDIO)
 end
 

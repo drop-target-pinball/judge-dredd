@@ -1,6 +1,6 @@
 scripts:
-    launch:       { module: plunge }
     plunge:       { module: plunge }
+    launch:       { module: plunge }
     plunge_audio: { module: plunge }
 
 

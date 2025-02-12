@@ -23,7 +23,8 @@ sdl:
   dmd:
     video: dmd
 
-
+vars:
+  free_play:  { kind: !bool true }
 
 
 

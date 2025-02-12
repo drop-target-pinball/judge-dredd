@@ -1,6 +1,6 @@
 scripts:
   add_player_watch:   { module: main }
-  main:               { module: main }
+  main:               { module: main, group: main, replace: true }
 
 
 music:

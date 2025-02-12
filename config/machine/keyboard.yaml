@@ -15,7 +15,7 @@ keyboard:
       name: right_flipper_button
       active: false
 
-  - key: enter
+  - key: return
     down: !switch_updated
       name: start_button
       active: true
