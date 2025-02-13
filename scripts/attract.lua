@@ -5,7 +5,15 @@ local jd = require("jd")
 local pub = {}
 
 function pub.attract()
-    spin.run(jd.ATTRACT_SLIDE_SHOW)
+    local gfx = spin.gfx(jd.DMD)
+    gfx.clear()
+    gfx.font(jd.DMD_18X12)
+    gfx.draw_centered_text("1,234,567")
+
+    -- gfx.font(jd.PF_ARMA_FIVE_8)
+    -- gfx.draw_centered_text("boo")
+
+    -- spin.run(jd.ATTRACT_SLIDE_SHOW)
     spin.run(jd.START_SERVICE)
     spin.wait(spin.for_eq(std.GAME_ACTIVE, true))
     spin.run(jd.MAIN)

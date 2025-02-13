@@ -1,4 +1,7 @@
 fonts:
+  dmd_18x12:
+    path: proc-shared/Font18x12.dmd
+
   pf_arma_five_8:
     path: pf-fonts/pf_arma_five.ttf
     point_size: 8
