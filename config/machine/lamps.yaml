@@ -200,6 +200,13 @@ drivers:
     layout:
       - { shape: circle, x: 212, y: 347, w: 8, h: 8, color_name: green }
 
+  super_game_button:
+    address: matrix/3/8
+    kind: lamp
+    name: Super Game Button
+    layout:
+      - { shape: circle, x: 34, y: 820, w: 15, h: 10, color_name: green }
+
   class_x_felony:
     address: matrix/4/1
     kind: lamp
@@ -223,6 +230,14 @@ drivers:
     manual_name: Crime Level 2 (Yellow)
     layout:
       - { shape: rect, x: 292, y: 599, w: 20, h: 42, color_name: yellow }
+
+  warning:
+    address: matrix/4/4
+    kind: lamp
+    name: Warning
+    manual_name: Crime Level 1 (Green)
+    layout:
+      - { shape: rect, x: 263, y: 600, w: 20, h: 42, color_name: green }
 
   meltdown:
     address: matrix/4/5
@@ -253,7 +268,13 @@ drivers:
     layout:
       - { shape: rect, x: 426, y: 466, w: 15, h: 37, color_name: green }
 
-  # START AFTER THIS ONE
+  stakeout:
+    address: matrix/5/1
+    kind: lamp
+    name: Stakeout
+    layout:
+      - { shape: rect, x: 36, y: 780, w: 12, h: 12, color_name: yellow }
+
   safe_cracker:
     address: matrix/5/2
     kind: lamp
@@ -266,7 +287,14 @@ drivers:
     kind: lamp
     name: Pursuit
     layout:
-      - { shape: rect, x: 192, y: 546, x: 29, y: 12, color_name: yellow }
+      - { shape: rect, x: 192, y: 546, w: 29, h: 12, color_name: yellow }
+
+  ultimate_challenge:
+    address: matrix/5/4
+    kind: lamp
+    name: Ultimate Challenge
+    layout:
+      - { shape: rect, x: 263, y: 600, w: 20, h: 42, color_name: orange }
 
   manhunt:
     address: matrix/5/5
@@ -281,6 +309,19 @@ drivers:
     name: Blackout
     layout:
       - { shape: rect, x: 226, y: 564, w: 26, h: 12, color_name: yellow }
+
+  sniper:
+    address: matrix/5/7
+    kind: lamp
+    name: Sniper
+    layout:
+      - { shape: rect, x: 253, y: 547, w: 26, h: 12, color_name: yellow }
+
+  subway_combo:
+    address: matrix/5/8
+    kind: lamp
+    name: Subway Combo
+    manual_name: Pick a Prize
 
   extra_ball:
     address: matrix/6/1
@@ -344,7 +385,7 @@ drivers:
     kind: lamp
     name: Mystery
     layout:
-      - { shape: Rect, x: 169, y: 471, w: 17, h: 19, color_name: blue }
+      - { shape: rect, x: 169, y: 471, w: 17, h: 19, color_name: blue }
 
   drop_target_j:
     address: matrix/7/1
@@ -441,14 +482,54 @@ drivers:
     name: Right Tank
     sort_name: Tank, Right
     layout:
-      - { shape: rect, x: 316, 359, w: 31, h: 14, color_name: green }
+      - { shape: rect, x: 316, y: 359, w: 31, h: 14, color_name: green }
 
   extra_ball_button:
-    address: matrix/8/2
+    address: matrix/8/7
     kind: lamp
     name: Extra Ball Button
     manual_name: Buy-In
     layout:
       - { shape: circle, x: 596, y: 789, w: 12, h: 14, color_name: yellow }
 
+  start_button:
+    address: matrix/8/8
+    kind: lamp
+    name: Start Button
+    layout:
+      - { shape: circle, x: 36, y: 780, w: 12, h: 12, color_name: yellow }
 
+  gi_1:
+    address: gi/1
+    kind: gi
+    name: General Illumination 1
+    layout:
+      - { shape: rect, x: 150, y: 5, w: 15, h: 15, color_name: white }
+
+  gi_2:
+    address: gi/2
+    kind: gi
+    name: General Illumination 2
+    layout:
+      - { shape: rect, x: 170, y: 5, w: 15, h: 15, color_name: white }
+
+  gi_1:
+    address: gi/3
+    kind: gi
+    name: General Illumination 3
+    layout:
+      - { shape: rect, x: 190, y: 5, w: 15, h: 15, color_name: white }
+
+  gi_4:
+    address: gi/4
+    kind: gi
+    name: General Illumination 4
+    layout:
+      - { shape: rect, x: 210, y: 5, w: 15, h: 15, color_name: white }
+
+  gi_5:
+    address: gi/5
+    kind: gi
+    name: General Illumination 5
+    layout:
+      - { shape: rect, x: 230, y: 5, w: 15, h: 15, color_name: white }

@@ -1,0 +1,100 @@
+drivers:
+  globe_magnet:
+    address: driver/1
+    kind: general
+    name: Globe Magnet
+    components:
+    - !jumper J130-1
+    - !transistor Q82
+    - !jumper J107-3
+    - !wire violet-brown
+
+  left_popper:
+    address: driver/2
+    kind: solenoid
+    name: Left Popper
+    sort_name: Popper, Left
+    components:
+    - !jumper J130-2
+    - !transistor Q80
+    - !jumper J107-3
+    - !wire violet-red
+
+  right_popper:
+    address: driver/3
+    kind: solenoid
+    name: Right Popper
+    sort_name: Popper, Right
+
+  globe_arm:
+    address: driver/4
+    kind: general
+    name: Globe Arm
+
+  drop_target_reset:
+    address: driver/5
+    kind: solenoid
+    name: Drop Target Reset
+
+  globe_motor:
+    address: driver/6
+    kind: general
+    name: Globe Motor
+
+  knocker:
+    address: driver/7
+    kind: solenoid
+    name: Knocker
+
+  right_shooter_lane:
+    address: driver/8
+    kind: solenoid
+    name: Right Shooter Lane
+    sort_name: Shooter Lane, Right
+
+  left_shooter_lane:
+    address: driver/9
+    kind: solenoid
+    name: Left Shooter Lane
+    sort_name: Shooter Lane, Left
+
+  drop_target_trip:
+    address: driver/10
+    kind: solenoid
+    name: Drop Target Trip
+
+  diverter:
+    address: driver/11
+    kind: solenoid
+    name: Diverter
+
+  driver_12:
+    address: driver/12
+    kind: general
+    name: D12
+    unused: true
+
+  trough:
+    address: driver/13
+    kind: solenoid
+    name: Trough
+
+  driver_14:
+    address: driver/14
+    kind: general
+    name: D14
+    unused: true
+
+  left_sling:
+    address: driver/15
+    kind: solenoid
+    name: Left Sling
+    sort_name: Sling, Left
+
+  right_sling:
+    address: driver/16
+    kind: solenoid
+    name: Right Sling
+    sort_name: Sling, Right
+
+

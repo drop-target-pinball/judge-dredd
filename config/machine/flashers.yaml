@@ -1,0 +1,81 @@
+drivers:
+  judge_fire:
+    address: driver/17
+    kind: flasher
+    name: Judge Fire
+    layout:
+      - { shape: circle, x: 365, y: 494, w: 15, h: 17, color_name: yellow }
+
+  judge_fear:
+    address: driver/18
+    kind: flasher
+    name: Judge Fear
+    layout:
+      - { shape: circle, x: 234, y: 496, h: 15, w: 17, color_name: blue }
+
+  judge_death:
+    address: driver/19
+    kind: flasher
+    name: Judge Death
+    layout:
+      - { shape: circle, x: 313, y: 494, w: 15, h: 17, color_name: red }
+
+  judge_mortis:
+    address: driver/20
+    kind: flasher
+    name: Judge Mortis
+    layout:
+      - { shape: circle, x: 272, y: 495, w: 15, h: 17, color_name: green }
+
+  left_pursuit:
+    address: driver/21
+    kind: flasher
+    name: Left Pursuit
+    sort_name: Pursuit, Left
+    layout:
+      - { shape: rect, x: 171, y: 295, w: 25, h: 21, color_name: blue }
+      - { shape: rect, x: 218, y: 286, w: 25, h: 21, color_name: red  }
+
+  right_pursuit:
+    address: driver/22
+    kind: flasher
+    name: Right Pursuit
+    sort_name: Pursuit, Right
+    layout:
+      - { shape: rect, x: 381, y: 361, w: 22, h: 20, color_name: blue }
+      - { shape: rect, x: 429, y: 375, w: 22, h: 20, color_name: red  }
+
+  blackout:
+    address: driver/23
+    kind: flasher
+    name: Blackout
+    layout:
+      - { shape: rect, x: 284, y: 673, w: 63, h: 20, color_name: yellow }
+
+  cursed_earth:
+    address: driver/24
+    kind: flasher
+    name: Cursed Earth
+
+  subway_exit:
+    address: driver/25
+    kind: flasher
+    name: Subway Exit
+    layout:
+      - { shape: circle, x: 121, y: 676, w: 9, h: 10, color_name: white }
+
+  globe:
+    address: driver/26
+    kind: flasher
+    name: Globe
+
+  right_ramp:
+    address: driver/27
+    kind: flasher
+    name: Right Ramp
+    sort_name: Ramp, Right
+
+  insert:
+    address: driver/28
+    kind: flasher
+    name: Insert

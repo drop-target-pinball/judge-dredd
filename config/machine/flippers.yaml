@@ -1,0 +1,24 @@
+flippers:
+  left_flipper:
+    address_power: flipper/1
+    address_hold: flipper/2
+    name: Lower Left Flipper
+    sort_name: Flipper, Lower Left
+
+  right_flipper:
+    address_power: flipper/3
+    address_hold: flipper/4
+    name: Lower Right Flipper
+    sort_name: Flipper, Lower Right
+
+  upper_left_flipper:
+    address_power: flipper/5
+    address_hold: flipper/6
+    name: Upper Left Flipper
+    sort_name: Flipper, Upper Left
+
+  upper_right_flipper:
+    address_power: flipper/7
+    address_hold: flipper/8
+    name: Upper Right Flipper
+    sort_name: Flipper. Upper Right
