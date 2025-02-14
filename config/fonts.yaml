@@ -1,4 +1,28 @@
 fonts:
+  dmd_09x5:
+    path: proc-shared/Font09x5.dmd
+
+  dmd_09x6:
+    path: proc-shared/Font09x6.dmd
+
+  dmd_09x7:
+    path: proc-shared/Font09x7.dmd
+
+  dmd_14x8:
+    path: proc-shared/Font14x8.dmd
+
+  dmd_14x9:
+    path: proc-shared/Font14x9.dmd
+
+  dmd_14x10:
+    path: proc-shared/Font14x10.dmd
+
+  dmd_18x10:
+    path: proc-shared/Font18x10.dmd
+
+  dmd_18x11:
+    path: proc-shared/Font18x11.dmd
+
   dmd_18x12:
     path: proc-shared/Font18x12.dmd
 
