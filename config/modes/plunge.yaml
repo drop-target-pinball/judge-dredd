@@ -1,8 +1,8 @@
 scripts:
     plunge:       { module: plunge }
     launch:       { module: plunge }
-    plunge_audio: { module: plunge }
-
+    use_fire_button_to_launch_ball:
+                  { module: plunge }
 
 music:
   plunge_loop:

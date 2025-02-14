@@ -4,6 +4,7 @@ scripts:
   init: { module: init }
 
 std:
+  - dmd
   - game
   - player_4
   - service

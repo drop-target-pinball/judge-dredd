@@ -1,4 +1,7 @@
 fonts:
+  dmd_04b_03_7px:
+    path: proc-shared/04B-03-7px.dmd
+
   dmd_09x5:
     path: proc-shared/Font09x5.dmd
 

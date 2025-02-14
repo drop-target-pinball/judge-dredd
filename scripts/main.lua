@@ -16,6 +16,7 @@ function pub.add_player_watch()
 end
 
 function pub.main()
+    spin.run(jd.SCORE_DRAW)
     spin.run(jd.PLUNGE)
     spin.run(jd.ADD_PLAYER_WATCH)
 end
