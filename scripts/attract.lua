@@ -57,34 +57,34 @@ end
 
 function pub.attract_game_over()
     local gfx = spin.gfx(jd.DMD)
-    gfx.clear()
-    gfx.font(jd.PF_RONDA_SEVEN_BOLD_8)
+    gfx.new(gfx.BLACK)
+    gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
     gfx.draw_centered_text("GAME OVER")
 end
 
 function pub.attract_dtp_presents()
     local gfx = spin.gfx(jd.DMD)
-    gfx.clear()
-    gfx.font(jd.PF_ARMA_FIVE_8)
+    gfx.new(gfx.BLACK)
+    gfx.font = jd.PF_ARMA_FIVE_8
     gfx.draw_text_y(3, "DROP TARGET PINBALL")
-    gfx.font(jd.PF_RONDA_SEVEN_BOLD_8)
+    gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
     gfx.draw_text_y(14, "PRESENTS")
 end
 
 function pub.attract_jd_remix()
     local gfx = spin.gfx(jd.DMD)
-    gfx.clear()
-    gfx.font(jd.PF_RONDA_SEVEN_BOLD_8)
+    gfx.new(gfx.BLACK)
+    gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
     gfx.draw_text_y(3, "JUDGE DREDD")
     gfx.draw_text_y(14, "REMIX")
 end
 
 function pub.attract_payment()
     local gfx = spin.gfx(jd.DMD)
-    gfx.font(jd.PF_RONDA_SEVEN_BOLD_8)
+    gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
 
     local draw = function(on)
-        gfx.clear()
+        gfx.new(gfx.BLACK)
         if on then
             gfx.draw_text_y(3, "PRESS START")
         end
@@ -102,8 +102,8 @@ end
 
 function pub.attract_gc()
     local gfx = spin.gfx(jd.DMD)
-    gfx.clear()
-    gfx.font(jd.PF_RONDA_SEVEN_BOLD_8)
+    gfx.new(gfx.BLACK)
+    gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
     gfx.draw_text_y(3, "GRAND CHAMPION")
     gfx.draw_text_y(14, "MCG  500,000,000")
 end

@@ -5,8 +5,8 @@ local pub = {}
 
 function pub.boot()
     local gfx = spin.gfx(jd.DMD)
-    gfx.clear()
-    gfx.font(jd.PF_TEMPESTA_FIVE_COMPRESSED_BOLD_8)
+    gfx.new(gfx.BLACK)
+    gfx.font = jd.PF_TEMPESTA_FIVE_COMPRESSED_BOLD_8
     gfx.draw_text_y(0, string.upper(spin.runtime.prog_description))
     gfx.draw_text_y(10, "V" .. string.upper(spin.runtime.prog_version))
     gfx.draw_text_y(20, string.upper(spin.runtime.prog_date))

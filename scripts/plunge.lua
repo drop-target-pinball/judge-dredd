@@ -14,6 +14,7 @@ end
 
 function pub.use_fire_button_to_launch_ball()
     local gfx = spin.gfx(jd.DMD, 1)
+
     spin.play_vocal(jd.USE_FIRE_BUTTON_TO_LAUNCH_BALL)
 
     local chevrons = {
@@ -24,15 +25,15 @@ function pub.use_fire_button_to_launch_ball()
     }
 
     for i=0,7*4 do
-        gfx.clear()
-        gfx.font(jd.PF_RONDA_SEVEN_BOLD_8)
+        gfx.new(gfx.BLACK)
+        gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
         gfx.draw_text_y(3, "USE")
         gfx.draw_text_y(14, "FIRE BUTTON")
 
         gfx.draw_text_x(110, chevrons[(i % 4) + 1])
         spin.sleep(0.1)
     end
-    gfx.release()
+    gfx.new(gfx.CLEAR)
 end
 
 function pub.launch()
