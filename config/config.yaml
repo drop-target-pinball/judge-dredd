@@ -23,6 +23,11 @@ sdl:
     with_ogg: true
   dmd:
     video: dmd
+  image:
+    with_jpeg: true
+    with_png: true
+  monitor:
+    playfield: monitor/judge-dredd-648x864.jpg
 
 vars:
   free_play:  { kind: !bool true }

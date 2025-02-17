@@ -184,28 +184,28 @@ drivers:
     kind: lamp
     name: Lock 1
     layout:
-      - { shape: circle, x: 223, y: 384, w: 8, h: 8, color_name: green }
+      - { shape: circle, x: 222, y: 382, w: 16, h: 16, color_name: green }
 
   lock_2:
     address: matrix/3/6
     kind: lamp
     name: Lock 2
     layout:
-      - { shape: circle, x: 217, y: 367, w: 8, h: 8, color_name: green }
+      - { shape: circle, x: 216, y: 362, w: 16, h: 16, color_name: green }
 
   lock_3:
     address: matrix/3/7
     kind: lamp
     name: Lock 3
     layout:
-      - { shape: circle, x: 212, y: 347, w: 8, h: 8, color_name: green }
+      - { shape: circle, x: 210, y: 346, w: 16, h: 16, color_name: green }
 
   super_game_button:
     address: matrix/3/8
     kind: lamp
     name: Super Game Button
     layout:
-      - { shape: circle, x: 34, y: 820, w: 15, h: 10, color_name: green }
+      - { shape: circle, x: 31, y: 811, w: 20, h: 20, color_name: green }
 
   class_x_felony:
     address: matrix/4/1
@@ -213,7 +213,7 @@ drivers:
     name: Class X Felony
     manual_name: Crime Level 4 (White)
     layout:
-      - { shape: rect, x: 349, y: 559, h: 20, w: 42, color_name: white }
+      - { shape: rect, x: 350, y: 599, w: 20, h: 42, color_name: white }
 
   felony:
     address: matrix/4/2
@@ -244,7 +244,7 @@ drivers:
     kind: lamp
     name: Meltdown
     layout:
-      - { shape: rect, x: 342, y: 573, w: 25, h: 12, color_name: yellow }
+      - { shape: rect, x: 342, y: 575, w: 26, h: 13, color_name: yellow }
 
   bad_impersonator:
     address: matrix/4/6
@@ -252,14 +252,14 @@ drivers:
     name: Bad Impersonator
     manual_name: Impersonator
     layout:
-      - { shape: rect, x: 304, y: 575, w: 26, h: 12, color_name: yellow }
+      - { shape: rect, x: 304, y: 575, w: 26, h: 13, color_name: yellow }
 
   battle_tank:
     address: matrix/4/7
     kind: lamp
     name: Battle Tank
     layout:
-      - { shape: rect, x: 265, y: 573, w: 26, h: 12, color_name: yellow }
+      - { shape: rect, x: 265, y: 575, w: 26, h: 13, color_name: yellow }
 
   award_meltdown:
     address: matrix/4/8
@@ -273,7 +273,7 @@ drivers:
     kind: lamp
     name: Stakeout
     layout:
-      - { shape: rect, x: 36, y: 780, w: 12, h: 12, color_name: yellow }
+      - { shape: rect, x: 411, y: 542, w: 26, h: 13, color_name: yellow }
 
   safe_cracker:
     address: matrix/5/2
@@ -294,14 +294,14 @@ drivers:
     kind: lamp
     name: Ultimate Challenge
     layout:
-      - { shape: rect, x: 263, y: 600, w: 20, h: 42, color_name: orange }
+      - { shape: rect, x: 297, y: 527, w: 40, h: 21, color_name: orange }
 
   manhunt:
     address: matrix/5/5
     kind: lamp
     name: Manhunt
     layout:
-      - { shape: circle, x: 378, y: 560, w: 26, h: 12, color_name: yellow }
+      - { shape: rect, x: 378, y: 560, w: 26, h: 12, color_name: yellow }
 
   blackout:
     address: matrix/5/6
@@ -329,8 +329,8 @@ drivers:
     name: Extra Ball
     manual_name: Right Extra Ball
     layout:
-      - { shape: circle, x: 180, y: 342, w: 6, h: 6, color_name: orange }
-      - { shape: circle, x: 408, y: 234, w: 6, h: 6, color_name: orange }
+      - { shape: circle, x: 179, y: 340, w: 10, h: 10, color_name: orange }
+      - { shape: circle, x: 407, y: 232, w: 10, h: 10, color_name: orange }
 
   right_mode_start:
     address: matrix/6/2
@@ -339,7 +339,7 @@ drivers:
     sort_name: Mode Start, Right
     manual_name: Right Start Feature
     layout:
-      - { shape: circle, x: 369, y: 226, w: 17, h: 19, color_name: yellow }
+      - { shape: circle, x: 366, y: 222, w: 30, h: 30, color_name: yellow }
 
   center_tank:
     address: matrix/6/3
@@ -354,14 +354,14 @@ drivers:
     kind: lamp
     name: Award Sniper
     layout:
-      - { shape: circle, x: 374, y: 200, w: 12, h: 13, color_name: white }
+      - { shape: circle, x: 369, y: 196, w: 25, h: 25, color_name: white }
 
   air_raid:
     address: matrix/6/5
     kind: lamp
     name: Air Raid
     layout:
-      - { shape: circle, x: 398, y: 220, w: 6, h: 7, color_name: red }
+      - { shape: circle, x: 394, y: 217, w: 14, h: 14, color_name: red }
 
   left_mode_start:
     address: matrix/6/6
@@ -370,7 +370,7 @@ drivers:
     sort_name: Mode Start, Left
     manual_name: Left Center Feature
     layout:
-      - { shape: circle, x: 228 ,y: 407, w: 22, h: 17, color_name: yellow }
+      - { shape: circle, x: 225 ,y: 403, w: 30, h: 30, color_name: yellow }
 
   left_tank:
     address: matrix/6/7
@@ -467,7 +467,7 @@ drivers:
     kind: lamp
     name: Judge Again
     layout:
-      - { shape: circle, x: 306, y: 745, w: 21, h: 19, color_name: orange }
+      - { shape: circle, x: 304, y: 741, w: 28, h: 28, color_name: orange }
 
   advance_crime_level:
     address: matrix/8/5
@@ -490,14 +490,14 @@ drivers:
     name: Extra Ball Button
     manual_name: Buy-In
     layout:
-      - { shape: circle, x: 596, y: 789, w: 12, h: 14, color_name: yellow }
+      - { shape: circle, x: 593, y: 785, w: 21, h: 21, color_name: yellow }
 
   start_button:
     address: matrix/8/8
     kind: lamp
     name: Start Button
     layout:
-      - { shape: circle, x: 36, y: 780, w: 12, h: 12, color_name: yellow }
+      - { shape: circle, x: 29, y: 775, w: 24, h: 24, color_name: yellow }
 
   gi_1:
     address: gi/1

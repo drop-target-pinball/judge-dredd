@@ -4,28 +4,28 @@ drivers:
     kind: flasher
     name: Judge Fire
     layout:
-      - { shape: circle, x: 365, y: 494, w: 15, h: 17, color_name: yellow }
+      - { shape: circle, x: 362, y: 492, w: 24, h: 24, color_name: yellow }
 
   judge_fear:
     address: driver/18
     kind: flasher
     name: Judge Fear
     layout:
-      - { shape: circle, x: 234, y: 496, h: 15, w: 17, color_name: blue }
+      - { shape: circle, x: 229, y: 492, h: 24, w: 24, color_name: blue }
 
   judge_death:
     address: driver/19
     kind: flasher
     name: Judge Death
     layout:
-      - { shape: circle, x: 313, y: 494, w: 15, h: 17, color_name: red }
+      - { shape: circle, x: 309, y: 492, w: 24, h: 24, color_name: red }
 
   judge_mortis:
     address: driver/20
     kind: flasher
     name: Judge Mortis
     layout:
-      - { shape: circle, x: 272, y: 495, w: 15, h: 17, color_name: green }
+      - { shape: circle, x: 269, y: 492, w: 24, h: 24, color_name: green }
 
   left_pursuit:
     address: driver/21
@@ -62,12 +62,14 @@ drivers:
     kind: flasher
     name: Subway Exit
     layout:
-      - { shape: circle, x: 121, y: 676, w: 9, h: 10, color_name: white }
+      - { shape: circle, x: 117, y: 670, w: 20, h: 20, color_name: white }
 
   globe:
     address: driver/26
     kind: flasher
     name: Globe
+    layout:
+      - { shape: circle, x: 212, y: 150, w: 70, h: 70, color_name: red }
 
   right_ramp:
     address: driver/27
