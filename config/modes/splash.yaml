@@ -1,0 +1,7 @@
+scripts:
+  splash: { module: splash, group: main, replace: true }
+
+music:
+  boot:
+    path: boot/boot.ogg
+

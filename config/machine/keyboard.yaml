@@ -15,6 +15,15 @@ keyboard:
       name: right_flipper_button
       active: false
 
+  - key: right
+    left_shift: true
+    down: !switch_updated
+      name: right_fire_button
+      active: true
+    up: !switch_updated
+      name: right_fire_button
+      active: false
+
   - key: return
     down: !switch_updated
       name: start_button

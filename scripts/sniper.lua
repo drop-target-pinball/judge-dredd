@@ -5,7 +5,31 @@ local message = require('message')
 local pub = {}
 
 function pub.sniper()
+    spin.run(jd.SNIPER_INTRO_DRAW)
     spin.run(jd.SNIPER_AUDIO)
+end
+
+function pub.sniper_intro_draw()
+    local gfx = spin.gfx(jd.DMD, 1)
+
+    local function draw(on)
+        gfx.new(gfx.BLACK)
+        gfx.font = jd.PF_ARMA_FIVE_8
+        gfx.draw_text_y(-2, "SNIPER")
+        if on then
+            gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
+            gfx.draw_text_y(8, "SHOOT")
+            gfx.draw_text_y(18, "SNIPER TOWER")
+        end
+    end
+
+    for i=0,9 do
+        draw(true)
+        spin.sleep(0.25)
+        draw(false)
+        spin.sleep(0.10)
+    end
+    gfx.new(gfx.CLEAR)
 end
 
 function pub.sniper_audio()

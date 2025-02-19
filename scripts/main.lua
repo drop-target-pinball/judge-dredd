@@ -1,24 +1,17 @@
 local spin = require("spin")
-local std = require("std")
 local jd = require("jd")
 
 local pub = {}
 
-function pub.add_player_watch()
-    spin.wait(spin.for_eq(std.PLAYER_COUNT, 2))
-    spin.play_vocal(jd.PLAYER_2)
-
-    spin.wait(spin.for_eq(std.PLAYER_COUNT, 3))
-    spin.play_vocal(jd.PLAYER_3)
-
-    spin.wait(spin.for_eq(std.PLAYER_COUNT, 4))
-    spin.play_vocal(jd.PLAYER_4)
-end
-
 function pub.main()
-    spin.run(jd.SCORE_DRAW)
-    spin.run(jd.PLUNGE)
-    spin.run(jd.ADD_PLAYER_WATCH)
+    spin.run(jd.START_SERVICE)
+    while true do
+        spin.run(jd.ATTRACT)
+        spin.wait(spin.for_eq(jd.GAME_ACTIVE, true))
+        spin.run(jd.GAME)
+        spin.wait(spin.forever())
+    end
 end
+
 
 return pub

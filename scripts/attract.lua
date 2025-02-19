@@ -6,9 +6,6 @@ local pub = {}
 
 function pub.attract()
     spin.run(jd.ATTRACT_SLIDE_SHOW)
-    spin.run(jd.START_SERVICE) -- FIXME: This should not be here
-    spin.wait(spin.for_eq(std.GAME_ACTIVE, true))
-    spin.run(jd.MAIN)
 end
 
 function pub.attract_slide_show()

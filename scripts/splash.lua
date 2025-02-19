@@ -3,7 +3,7 @@ local jd = require("jd")
 
 local pub = {}
 
-function pub.boot()
+function pub.splash()
     local gfx = spin.gfx(jd.DMD)
     gfx.new(gfx.BLACK)
     gfx.font = jd.PF_TEMPESTA_FIVE_COMPRESSED_BOLD_8
@@ -14,7 +14,6 @@ function pub.boot()
 
     spin.wait(spin.for_time(8), spin.for_switch(jd.START_BUTTON))
     spin.stop_music()
-    spin.run(jd.ATTRACT)
 end
 
 return pub

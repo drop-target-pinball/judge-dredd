@@ -1,9 +1,15 @@
+run_groups:
+  sniper: { parent: mode }
+
+
 scripts:
-  sniper:             { module: sniper, group: mode }
-  sniper_audio:       { module: sniper, group: mode }
-  sniper_fall:        { module: sniper, group: mode, replace: true }
-  sniper_fall_audio:  { module: sniper, group: mode }
-  sniper_success:     { module: sniper, group: mode, replace: true }
+  sniper:             { module: sniper, group: sniper }
+  sniper_intro_draw:  { module: sniper, group: sniper }
+  sniper_audio:       { module: sniper, group: sniper }
+  sniper_fall:        { module: sniper, group: sniper, replace: true }
+  sniper_fall_audio:  { module: sniper, group: sniper }
+  sniper_success:     { module: sniper, group: sniper, replace: true }
+
 
 vocals:
   aaaaah:
