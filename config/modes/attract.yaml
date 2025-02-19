@@ -10,3 +10,7 @@ scripts:
   attract_jd_remix:     { module: attract, group: attract_slide, replace: true }
   attract_payment:      { module: attract, group: attract_slide, replace: true }
   attract_gc:           { module: attract, group: attract_slide, replace: true }
+  attract_hst_1:        { module: attract, group: attract_slide, replace: true }
+  attract_hst_2:        { module: attract, group: attract_slide, replace: true }
+  attract_hst_3:        { module: attract, group: attract_slide, replace: true }
+  attract_hst_4:        { module: attract, group: attract_slide, replace: true }

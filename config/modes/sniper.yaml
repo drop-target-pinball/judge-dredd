@@ -3,7 +3,7 @@ run_groups:
 
 
 scripts:
-  sniper:             { module: sniper, group: sniper }
+  sniper:             { module: sniper, group: sniper, replace: true }
   sniper_intro_draw:  { module: sniper, group: sniper }
   sniper_audio:       { module: sniper, group: sniper }
   sniper_fall:        { module: sniper, group: sniper, replace: true }

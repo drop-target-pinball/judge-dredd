@@ -14,9 +14,13 @@ function pub.attract_slide_show()
         jd.ATTRACT_DTP_PRESENTS,
         jd.ATTRACT_JD_REMIX,
         jd.ATTRACT_PAYMENT,
-        jd.ATTRACT_GC
+        jd.ATTRACT_GC,
+        jd.ATTRACT_HST_1,
+        jd.ATTRACT_HST_2,
+        jd.ATTRACT_HST_3,
+        jd.ATTRACT_HST_4,
     }
-    local n = 5
+    local n = 9
     local curr = 1
 
     local next = function()
@@ -103,6 +107,38 @@ function pub.attract_gc()
     gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
     gfx.draw_text_y(3, "GRAND CHAMPION")
     gfx.draw_text_y(14, "MCG  500,000,000")
+end
+
+function pub.attract_hst_1()
+    local gfx = spin.gfx(jd.DMD)
+    gfx.new(gfx.BLACK)
+    gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
+    gfx.draw_text_y(3, "HIGH SCORES")
+    gfx.draw_text_y(14, "1) TSM  450,000,000")
+end
+
+function pub.attract_hst_2()
+    local gfx = spin.gfx(jd.DMD)
+    gfx.new(gfx.BLACK)
+    gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
+    gfx.draw_text_y(3, "HIGH SCORES")
+    gfx.draw_text_y(14, "2) DLB  400,000,000")
+end
+
+function pub.attract_hst_3()
+    local gfx = spin.gfx(jd.DMD)
+    gfx.new(gfx.BLACK)
+    gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
+    gfx.draw_text_y(3, "HIGH SCORES")
+    gfx.draw_text_y(14, "3) KID  350,000,000")
+end
+
+function pub.attract_hst_4()
+    local gfx = spin.gfx(jd.DMD)
+    gfx.new(gfx.BLACK)
+    gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
+    gfx.draw_text_y(3, "HIGH SCORES")
+    gfx.draw_text_y(14, "4) DAG  300,000,000")
 end
 
 return pub
