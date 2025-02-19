@@ -5,7 +5,7 @@ local message = require('message')
 local pub = {}
 
 function pub.sniper()
-    spin.run(jd.SNIPER_INTRO_DRAW)
+    spin.run(jd.SNIPER_DRAW)
     spin.run(jd.SNIPER_AUDIO)
 end
 
@@ -29,7 +29,27 @@ function pub.sniper_intro_draw()
         draw(false)
         spin.sleep(0.10)
     end
-    gfx.new(gfx.CLEAR)
+end
+
+function pub.sniper_score_draw()
+    local gfx = spin.gfx(jd.DMD, 1)
+    while true do
+        gfx.new(gfx.BLACK)
+        gfx.font = jd.PF_ARMA_FIVE_8
+        gfx.draw_text_y(-2, "SNIPER")
+        gfx.font = jd.DMD_14X10
+        gfx.draw_text_y(12, spin.format_score(spin.int(jd.SNIPER_SCORE)))
+        spin.wait(spin.for_any(message.TICK))
+    end
+end
+
+function pub.sniper_draw()
+    spin.reset_timer(jd.SNIPER_SCORE)
+    spin.run(jd.SNIPER_INTRO_DRAW)
+    spin.wait(spin.for_script(jd.SNIPER_INTRO_DRAW))
+    spin.run(jd.SNIPER_SCORE_DRAW)
+    spin.sleep(1)
+    spin.start_timer(jd.SNIPER_SCORE)
 end
 
 function pub.sniper_audio()

@@ -4,11 +4,27 @@ run_groups:
 
 scripts:
   sniper:             { module: sniper, group: sniper, replace: true }
-  sniper_intro_draw:  { module: sniper, group: sniper }
   sniper_audio:       { module: sniper, group: sniper }
+  sniper_draw:        { module: sniper, group: sniper }
   sniper_fall:        { module: sniper, group: sniper, replace: true }
   sniper_fall_audio:  { module: sniper, group: sniper }
+  sniper_intro_draw:  { module: sniper, group: sniper }
+  sniper_score_draw:  { module: sniper, group: sniper }
   sniper_success:     { module: sniper, group: sniper, replace: true }
+
+
+timers:
+  sniper_score:
+    var: sniper_score
+    start: 20000000
+    end: 3000000
+    step: -78330
+    tick: 0.16 # sec
+    group: sniper
+
+
+vars:
+  sniper_score:   { kind: !int 0 }
 
 
 vocals:
