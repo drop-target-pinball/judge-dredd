@@ -12,7 +12,7 @@ local function blinking_score(title)
         gfx.draw_text_y(-2, title)
         if on then
             gfx.font = jd.DMD_14X10
-            gfx.draw_text_y(12, spin.format_score(spin.int(jd.SNIPER_SCORE)))
+            gfx.draw_text_y(12, spin.format_score(spin.player().int(jd.SNIPER_BONUS)))
         end
     end
 
@@ -26,12 +26,13 @@ end
 
 function pub.sniper()
     spin.reset_timer(jd.SNIPER_SCORE)
-
     spin.run(jd.SNIPER_DRAW)
     spin.run(jd.SNIPER_AUDIO)
 
     spin.sleep(5.25)
+    spin.blink_driver(jd.AWARD_SNIPER)
     spin.start_timer(jd.SNIPER_SCORE)
+    spin.pulse_driver(jd.RIGHT_POPPER)
 
     local kind = spin.wait(
         spin.for_ball(jd.RIGHT_POPPER, 0.5),
@@ -45,6 +46,7 @@ function pub.sniper()
         spin.kill_group(jd.SNIPER)
         spin.play_music(jd.MAIN_THEME)
         spin.gfx(jd.DMD, 1).new(spin.CLEAR)
+        spin.stop_driver(jd.AWARD_SNIPER)
     end
 end
 
@@ -105,11 +107,14 @@ end
 -------------------------------------------------------------------------------
 function pub.sniper_fall()
     spin.reset_timer(jd.SNIPER_FALL)
+    spin.stop_driver(jd.AWARD_SNIPER)
 
     spin.run(jd.SNIPER_FALL_DRAW)
     spin.run(jd.SNIPER_FALL_AUDIO)
 
     spin.sleep(4)
+    spin.blink_driver(jd.AWARD_SNIPER)
+    spin.pulse_driver(jd.RIGHT_POPPER)
     spin.start_timer(jd.SNIPER_FALL)
 
     local kind = spin.wait(
@@ -143,7 +148,7 @@ function pub.sniper_fall_timer_draw()
         gfx.new(spin.OFF)
         gfx.font = jd.PF_ARMA_FIVE_8
         gfx.draw_text_y(-2, "SNIPER")
-        gfx.draw_text_y(dmd.height, "SHOOT SNIPER TOWER", {bottom=true})
+        gfx.draw_text_y(dmd.height, "SHOOT TOWER", {bottom=true})
 
         gfx.font = jd.DMD_14X10
         gfx.draw_text_x(5, spin.int(jd.SNIPER_FALL_TIMER))
@@ -174,6 +179,8 @@ function pub.sniper_fall_audio()
 end
 
 function pub.sniper_failure()
+    spin.stop_driver(jd.AWARD_SNIPER)
+
     local gfx = spin.gfx(jd.DMD, 1).new(spin.OFF)
     gfx.font = jd.PF_ARMA_FIVE_8
     gfx.draw_text_y(-2, "SNIPER")
@@ -187,10 +194,11 @@ function pub.sniper_failure()
     spin.play_vocal(jd.SNIPER_ELIMINATED)
     spin.sleep(2)
     spin.gfx(jd.DMD, 1).new(spin.CLEAR)
-    -- spin.kill_group(jd.MODE)
 end
 
 function pub.sniper_success()
+    spin.stop_driver(jd.AWARD_SNIPER)
+
     spin.stop_vocal()
     spin.play_music(jd.MAIN_THEME)
     spin.play_sound(jd.SNIPER_SPLAT)
@@ -200,7 +208,6 @@ function pub.sniper_success()
     spin.play_sound(jd.SUCCESS_SNIPER)
     blinking_score("SNIPER TOTAL")
     spin.gfx(jd.DMD, 1).new(spin.CLEAR)
-    -- spin.kill_group(jd.MODE)
 end
 
 return pub

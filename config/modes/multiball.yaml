@@ -1,6 +1,8 @@
 scripts:
-    multiball:          { module: multiball }
-    multiball_audio:    { module: multiball }
+    left_ramp_runway_lights:  { module: multiball }
+    multiball:                { module: multiball }
+    multiball_audio:          { module: multiball }
+
 
 music:
   multiball_intro:

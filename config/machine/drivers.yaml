@@ -25,6 +25,8 @@ drivers:
     kind: solenoid
     name: Right Popper
     sort_name: Popper, Right
+    layout:
+      - { shape: circle, x: 369, y: 196, w: 25, h: 25, color_name: pink }
 
   globe_arm:
     address: driver/4

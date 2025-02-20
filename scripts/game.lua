@@ -63,6 +63,7 @@ end
 
 function pub.manual_launch()
     spin.stop_vocal()
+    spin.pulse_driver(jd.RIGHT_SHOOTER_LANE)
     spin.play_music(jd.MAIN_THEME)
     spin.play_sound(jd.MOTORCYCLE_START)
 end
