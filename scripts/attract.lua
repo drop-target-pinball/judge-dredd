@@ -57,15 +57,13 @@ function pub.attract_slide_show()
 end
 
 function pub.attract_game_over()
-    local gfx = spin.gfx(jd.DMD)
-    gfx.new(gfx.BLACK)
+    local gfx = spin.gfx(jd.DMD).new(spin.OFF)
     gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
     gfx.draw_centered_text("GAME OVER")
 end
 
 function pub.attract_dtp_presents()
-    local gfx = spin.gfx(jd.DMD)
-    gfx.new(gfx.BLACK)
+    local gfx = spin.gfx(jd.DMD).new(spin.OFF)
     gfx.font = jd.PF_ARMA_FIVE_8
     gfx.draw_text_y(3, "DROP TARGET PINBALL")
     gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
@@ -73,8 +71,7 @@ function pub.attract_dtp_presents()
 end
 
 function pub.attract_jd_remix()
-    local gfx = spin.gfx(jd.DMD)
-    gfx.new(gfx.BLACK)
+    local gfx = spin.gfx(jd.DMD).new(spin.OFF)
     gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
     gfx.draw_text_y(3, "JUDGE DREDD")
     gfx.draw_text_y(14, "REMIX")
@@ -102,40 +99,35 @@ function pub.attract_payment()
 end
 
 function pub.attract_gc()
-    local gfx = spin.gfx(jd.DMD)
-    gfx.new(gfx.BLACK)
+    local gfx = spin.gfx(jd.DMD).new(spin.OFF)
     gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
     gfx.draw_text_y(3, "GRAND CHAMPION")
     gfx.draw_text_y(14, "MCG  500,000,000")
 end
 
 function pub.attract_hst_1()
-    local gfx = spin.gfx(jd.DMD)
-    gfx.new(gfx.BLACK)
+    local gfx = spin.gfx(jd.DMD).new(spin.OFF)
     gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
     gfx.draw_text_y(3, "HIGH SCORES")
     gfx.draw_text_y(14, "1) TSM  450,000,000")
 end
 
 function pub.attract_hst_2()
-    local gfx = spin.gfx(jd.DMD)
-    gfx.new(gfx.BLACK)
+    local gfx = spin.gfx(jd.DMD).new(spin.OFF)
     gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
     gfx.draw_text_y(3, "HIGH SCORES")
     gfx.draw_text_y(14, "2) DLB  400,000,000")
 end
 
 function pub.attract_hst_3()
-    local gfx = spin.gfx(jd.DMD)
-    gfx.new(gfx.BLACK)
+    local gfx = spin.gfx(jd.DMD).new(spin.OFF)
     gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
     gfx.draw_text_y(3, "HIGH SCORES")
     gfx.draw_text_y(14, "3) KID  350,000,000")
 end
 
 function pub.attract_hst_4()
-    local gfx = spin.gfx(jd.DMD)
-    gfx.new(gfx.BLACK)
+    local gfx = spin.gfx(jd.DMD).new(spin.OFF)
     gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
     gfx.draw_text_y(3, "HIGH SCORES")
     gfx.draw_text_y(14, "4) DAG  300,000,000")
