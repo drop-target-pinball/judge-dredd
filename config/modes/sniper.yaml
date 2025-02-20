@@ -3,20 +3,22 @@ run_groups:
 
 
 scripts:
-  sniper:                 { module: sniper, group: sniper, replace: true }
+  sniper:                 { module: sniper, group: mode, replace: true }
   sniper_audio:           { module: sniper, group: sniper }
   sniper_draw:            { module: sniper, group: sniper }
-  sniper_fall:            { module: sniper, group: sniper, replace: true }
+  sniper_failure:         { module: sniper, group: mode, replace: true }
+  sniper_fall:            { module: sniper, group: mode, replace: true }
   sniper_fall_audio:      { module: sniper, group: sniper }
   sniper_fall_draw:       { module: sniper, group: sniper }
   sniper_fall_intro_draw: { module: sniper, group: sniper }
   sniper_fall_timer_draw: { module: sniper, group: sniper }
   sniper_intro_draw:      { module: sniper, group: sniper }
   sniper_score_draw:      { module: sniper, group: sniper }
-  sniper_success:         { module: sniper, group: sniper, replace: true }
+  sniper_success:         { module: sniper, group: mode, replace: true }
 
-  test_sniper_failure:  { module: sniper_test, test: true }
-  test_sniper_success:  { module: sniper_test, test: true }
+  test_sniper_failure:      { module: sniper_test, test: true }
+  test_sniper_fall_failure: { module: sniper_test, test: true }
+  test_sniper_success:      { module: sniper_test, test: true }
 
 
 timers:
@@ -38,6 +40,10 @@ timers:
 vars:
   sniper_score:       { kind: !int 0 }
   sniper_fall_timer:  { kind: !int 0 }
+
+namespaces:
+  player:
+    sniper_bonus:     { kind: !int 0 }
 
 vocals:
   aaaaah:

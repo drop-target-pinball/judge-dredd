@@ -10,11 +10,19 @@ function pub.test_sniper_failure()
     spin.set(jd.SNIPER_SCORE, 3550700)
 end
 
+function pub.test_sniper_fall_failure()
+    spin.run(jd.SNIPER)
+    spin.sleep(6)
+    spin.switch_updated(jd.RIGHT_POPPER)
+    spin.sleep(7)
+    spin.set(jd.SNIPER_FALL_TIMER, 2)
+end
+
 function pub.test_sniper_success()
     spin.run(jd.SNIPER)
-    spin.sleep(4)
+    spin.sleep(6)
     spin.switch_updated(jd.RIGHT_POPPER)
-    spin.sleep(3)
+    spin.sleep(7)
     spin.switch_updated(jd.RIGHT_POPPER)
 end
 
