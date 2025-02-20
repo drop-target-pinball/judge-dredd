@@ -1,5 +1,5 @@
 local spin = require('spin')
-local message = require('message')
+local std = require('std')
 local jd = require('jd')
 
 local pub = {}
@@ -10,7 +10,7 @@ end
 
 function pub.multiball_audio()
     spin.play_music(jd.MULTIBALL_INTRO, {loops=1, notify=true})
-    spin.wait_for(message.MUSIC_ENDED)
+    spin.wait_for(std.MUSIC_ENDED)
     spin.play_music(jd.MULTIBALL)
 end
 

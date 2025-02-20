@@ -1,12 +1,24 @@
 local spin = require('spin')
+local std = require('std')
 local jd = require('jd')
-local message = require('message')
 
 local pub = {}
 
 function pub.sniper()
     spin.run(jd.SNIPER_DRAW)
     spin.run(jd.SNIPER_AUDIO)
+    local kind = spin.wait(
+        spin.for_ball(jd.RIGHT_POPPER, 0.5),
+        spin.for_any(std.TIMER_EXPIRED)
+    )
+    if kind == std.BALL_ARRIVED then
+        spin.run(jd.SNIPER_FALL)
+    else
+        spin.play_music(jd.MAIN_THEME)
+        local gfx = spin.gfx(jd.DMD, 1)
+        gfx.new(gfx.CLEAR)
+        spin.kill_group(jd.MODE)
+    end
 end
 
 function pub.sniper_intro_draw()
@@ -39,7 +51,7 @@ function pub.sniper_score_draw()
         gfx.draw_text_y(-2, "SNIPER")
         gfx.font = jd.DMD_14X10
         gfx.draw_text_y(12, spin.format_score(spin.int(jd.SNIPER_SCORE)))
-        spin.wait(spin.for_any(message.TICK))
+        spin.wait(spin.for_any(std.TICK))
     end
 end
 
@@ -76,7 +88,7 @@ function pub.sniper_fall_audio()
     spin.play_sound(jd.SUCCESS_SNIPER)
     spin.sleep(2.5)
     spin.play_vocal(jd.SHOOT_SNIPER_TOWER, {notify=true})
-    spin.wait(spin.for_any(message.VOCAL_ENDED))
+    spin.wait(spin.for_any(std.VOCAL_ENDED))
     spin.play_vocal(jd.AAAAAH)
     spin.sleep(3)
     spin.play_vocal(jd.ITS_A_LONG_WAY_DOWN)

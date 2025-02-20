@@ -31,3 +31,12 @@ keyboard:
     up: !switch_updated
       name: start_button
       active: false
+
+  # (s)niper tower
+  - key: s
+    down: !switch_updated
+      name: right_popper
+      active: true
+    up: !switch_updated
+      name: right_popper
+      active: false

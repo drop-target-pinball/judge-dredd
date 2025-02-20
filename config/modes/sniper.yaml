@@ -12,6 +12,8 @@ scripts:
   sniper_score_draw:  { module: sniper, group: sniper }
   sniper_success:     { module: sniper, group: sniper, replace: true }
 
+  test_sniper_failure:  { module: sniper_test, test: true }
+
 
 timers:
   sniper_score:
@@ -20,6 +22,7 @@ timers:
     end: 3000000
     step: -78330
     tick: 0.16 # sec
+    expire_delay: 2 # sec
     group: sniper
 
 
