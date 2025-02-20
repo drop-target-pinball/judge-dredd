@@ -13,7 +13,7 @@ scripts:
   sniper_success:     { module: sniper, group: sniper, replace: true }
 
   test_sniper_failure:  { module: sniper_test, test: true }
-
+  test_sniper_success:  { module: sniper_test, test: true }
 
 timers:
   sniper_score:
