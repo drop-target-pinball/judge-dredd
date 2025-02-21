@@ -4,7 +4,6 @@ run_groups:
 
 scripts:
   attract:              { module: attract, group: attract, replace: true }
-  attract_slide_show:   { module: attract, group: attract }
   attract_game_over:    { module: attract, group: attract_slide, replace: true }
   attract_dtp_presents: { module: attract, group: attract_slide, replace: true }
   attract_jd_remix:     { module: attract, group: attract_slide, replace: true }
@@ -14,3 +13,5 @@ scripts:
   attract_hst_2:        { module: attract, group: attract_slide, replace: true }
   attract_hst_3:        { module: attract, group: attract_slide, replace: true }
   attract_hst_4:        { module: attract, group: attract_slide, replace: true }
+
+  test_attract:         { module: attract, test: true }

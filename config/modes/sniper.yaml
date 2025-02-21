@@ -16,9 +16,9 @@ scripts:
   sniper_score_draw:      { module: sniper, group: sniper }
   sniper_success:         { module: sniper, group: mode, replace: true }
 
-  test_sniper_failure:      { module: sniper_test, test: true }
-  test_sniper_fall_failure: { module: sniper_test, test: true }
-  test_sniper_success:      { module: sniper_test, test: true }
+  test_sniper_failure:      { module: sniper, test: true }
+  test_sniper_fall_failure: { module: sniper, test: true }
+  test_sniper_success:      { module: sniper, test: true }
 
 
 timers:

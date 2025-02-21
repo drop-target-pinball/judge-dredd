@@ -15,4 +15,14 @@ function pub.splash()
     spin.stop_music()
 end
 
+-------------------------------------------------------------------------------
+local test = require("test")
+
+function pub.test_splash()
+    spin.run(jd.SPLASH)
+    spin.sleep(1)
+    test.press(jd.START_BUTTON)
+    test.wait(1, "script end", spin.for_script(jd.SPLASH))
+end
+
 return pub

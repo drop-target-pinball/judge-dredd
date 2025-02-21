@@ -5,10 +5,6 @@ local jd = require("jd")
 local pub = {}
 
 function pub.attract()
-    spin.run(jd.ATTRACT_SLIDE_SHOW)
-end
-
-function pub.attract_slide_show()
     local slides = {
         jd.ATTRACT_GAME_OVER,
         jd.ATTRACT_DTP_PRESENTS,
@@ -132,5 +128,23 @@ function pub.attract_hst_4()
     gfx.draw_text_y(3, "HIGH SCORES")
     gfx.draw_text_y(14, "4) DAG  300,000,000")
 end
+
+-------------------------------------------------------------------------------
+local test = require("test")
+
+function pub.test_attract()
+    spin.run(jd.MAIN)
+    for i=1,9 do
+        test.press(jd.RIGHT_FLIPPER_BUTTON)
+        spin.sleep(0.25)
+    end
+    for i=1,9 do
+        test.press(jd.LEFT_FLIPPER_BUTTON)
+        spin.sleep(0.25)
+    end
+    test.press(jd.START_BUTTON)
+    test.wait(2, "script end", spin.for_script(jd.ATTRACT))
+end
+
 
 return pub
