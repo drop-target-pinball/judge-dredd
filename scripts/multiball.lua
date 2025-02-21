@@ -34,6 +34,11 @@ function pub.left_ramp_runway_lights()
         {true, 0.25},
         {false, 0.5625}
     })
+    spin.schedule_driver(jd.LEFT_PURSUIT, {
+        {false, 0.5},
+        {true, 0.0625},
+        {false, 0.4375},
+    })
 end
 
 return pub

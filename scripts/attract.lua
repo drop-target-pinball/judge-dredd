@@ -82,7 +82,7 @@ function pub.attract_payment()
     gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
 
     local draw = function(on)
-        gfx.new(gfx.BLACK)
+        gfx.new(spin.OFF)
         if on then
             gfx.draw_text_y(3, "PRESS START")
         end
