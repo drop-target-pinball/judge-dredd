@@ -4,6 +4,8 @@ switches:
     name: Left Coin Slot
     sort_name: Coin Slot, Left
     manual_name: Left Coin Chute
+    layout:
+      - { shape: diamond, x: 256, y: 827, w: 25, h: 25, color_name: cyan }
     components:
     - !wire orange-brown
     - !jumper J205-1
@@ -13,6 +15,8 @@ switches:
     name: Center Coin Slot
     sort_name: Coin Slot, Center
     manual_name: Center Coin Chute
+    layout:
+      - { shape: diamond, x: 303, y: 827, w: 25, h: 25, color_name: cyan }
     components:
     - !wire orange-red
     - !jumper J205-2
@@ -22,6 +26,8 @@ switches:
     name: Right Coin Slot
     sort_name: Coin Slot, Right
     manual_name: Right Coin Chute
+    layout:
+      - { shape: diamond, x: 351, y: 827, w: 25, h: 25, color_name: cyan }
     components:
     - !wire orange-black
     - !jumper J205-3
@@ -31,6 +37,7 @@ switches:
     name: Other Coin Slot
     sort_name: Coin Slot, Other
     manual_name: 4th Coin Chute
+    unused: true
     components:
     - !wire orange-yellow
     - !jumper J205-4
@@ -39,6 +46,8 @@ switches:
     address: direct/5
     name: Escape Button
     manual_name: Service Credits / Escape
+    layout:
+      - { shape: diamond, x: 111, y: 806, w: 25, h: 25, color_name: cyan }
     components:
     - !wire orange-green
     - !jumper J205-6
@@ -47,6 +56,8 @@ switches:
     address: direct/6
     name: Down Button
     manual_name: Volume Down / Down
+    layout:
+      - { shape: diamond, x: 140, y: 806, w: 25, h: 25, color_name: cyan }
     components:
     - !wire orange-blue
     - !jumper J205-7
@@ -55,6 +66,8 @@ switches:
     address: direct/7
     name: Up Button
     manual_name: Volume Up/ Up
+    layout:
+      - { shape: diamond, x: 169, y: 806, w: 25, h: 25, color_name: cyan }
     components:
     - !wire orange-violet
     - !jumper J205-8
@@ -63,6 +76,8 @@ switches:
     address: direct/8
     name: Enter Button
     manual_name: Begin Test / Enter
+    layout:
+      - { shape: diamond, x: 198, y: 806, w: 25, h: 25, color_name: cyan }
     components:
     - !wire orange-gray
     - !jumper J205-9
@@ -82,6 +97,8 @@ switches:
     name: Right Flipper Button
     sort_name: Flipper Button, Right
     manual_name: Right Flipper Opto
+    layout:
+      - { shape: diamond, x: 581, y: 29, w: 25, h: 25, color_name: cyan }
     components:
     - !wire blue-violet
     - !jumper J905-1
@@ -101,6 +118,8 @@ switches:
     name: Left Flipper Button
     sort_name: Flipper Button, Left
     manual_name: Left Flipper Opto
+    layout:
+      - { shape: diamond, x: 39, y: 29, w: 25, h: 25, color_name: cyan }
     components:
     - !wire blue-gray
     - !jumper J905-2
@@ -147,53 +166,73 @@ switches:
     address: matrix/1/1
     name: Left Fire Button
     sort_name: Fire Button, Left
+    layout:
+      - { shape: diamond, x: 17, y: 51, w: 25, h: 25, color_name: cyan }
 
   right_fire_button:
     address: matrix/1/2
     name: Right Fire Button
     sort_name: Fire Button, Right
+    layout:
+      - { shape: diamond, x: 603, y: 52, w: 25, h: 25, color_name: cyan }
 
   start_button:
     address: matrix/1/3
     name: Start Button
     manual_name: Credit (Start)
+    layout:
+      - { shape: diamond, x: 59, y: 773, w: 25, h: 25, color_name: cyan }
 
   tilt:
     address: matrix/1/4
     name: Title
     manual_name: Plumb Bob Tilt
+    layout:
+      - { shape: diamond, x: 7, y: 687, w: 25, h: 25, color_name: red }
 
   left_shooter_lane:
     address: matrix/1/5
     name: Left Shooter Lane
     sort_name: Shooter Lane, Left
     manual_name: Left Shoot Lane
+    layout:
+      - { shape: diamond, x: 77, y: 737, w: 25, h: 25, color_name: cyan }
 
   left_outlane:
     address: matrix/1/6
     name: Left Outlane
     sort_name: Outlane, Left
+    layout:
+      - { shape: diamond, x: 141, y: 608, w: 25, h: 25, color_name: cyan }
 
   left_return_lane:
     address: matrix/1/7
     name: Left Return Lane
     sort_name: Return Lane, Left
+    layout:
+      - { shape: diamond, x: 168, y: 608, w: 25, h: 25, color_name: cyan }
 
   bank_targets:
     address: matrix/1/8
     name: Bank Targets
     manual_name: 3-Bank Targets
+    layout:
+      - { shape: diamond, x: 375, y: 338, w: 25, h: 25, color_name: cyan }
 
   slam_tilt:
     address: matrix/2/1
     name: Slam Tilt
     sort_name: Tilt, Slam
+    layout:
+      - { shape: diamond, x: 7, y: 717, w: 25, h: 25, color_name: red }
 
   coin_door_open:
     address: matrix/2/2
     normally: closed
     name: Coin Door Open
     manual_name: Front Door Open
+    layout:
+      - { shape: diamond, x: 7, y: 657, w: 25, h: 25, color_name: cyan }
 
   ticket_dispenser:
     address: matrix/2/3
@@ -209,14 +248,20 @@ switches:
     address: matrix/2/5
     name: Top Right Post
     sort_name: Post, Top Right
+    layout:
+      - { shape: diamond, x: 416, y: 207, w: 25, h: 25, color_name: cyan }
 
   captive_ball_1:
     address: matrix/2/6
     name: Captive Ball 1
+    layout:
+      - { shape: diamond, x: 445, y: 399, w: 25, h: 25, color_name: cyan }
 
   mystery:
     address: matrix/2/7
     name: Mystery
+    layout:
+      - { shape: diamond, x: 134, y: 449, w: 25, h: 25, color_name: cyan }
 
   switch_28:
     address: matrix/2/8
@@ -227,6 +272,8 @@ switches:
     address: matrix/3/1
     name: Extra Ball Button
     manual_name: Buy-In (Extra Ball)
+    layout:
+      - { shape: diamond, x: 620, y: 783, w: 25, h: 25, color_name: cyan }
 
   switch_32:
     address: matrix/3/2
@@ -238,53 +285,73 @@ switches:
     name: Outer Left Loop
     sort_name: Loop, Outer Left
     manual_name: Left Rollover
+    layout:
+      - { shape: diamond, x: 134, y: 268, w: 25, h: 25, color_name: cyan }
 
   inner_right_return_lane:
     address: matrix/3/4
     name: Inner Right Return Lane
     sort_name: Return Lane, Inner Right
     manual_name: Inside Right Return
+    layout:
+      - { shape: diamond, x: 435, y: 608, w: 25, h: 25, color_name: cyan }
 
   inner_loop:
     address: matrix/3/5
     name: Inner Loop
     sort_name: Loop, Inner
     manual_name: Top Center Rollover
+    layout:
+      - { shape: diamond, x: 306, y: 182, w: 25, h: 25, color_name: cyan }
 
   left_post:
     address: matrix/3/6
     name: Left Post
     sort_name: Post, Left
     manual_name: Left Score Post
+    layout:
+      - { shape: diamond, x: 162, y: 310, w: 25, h: 25, color_name: cyan }
 
   subway_enter_1:
     address: matrix/3/7
     name: Subway Enter 1
+    layout:
+      - { shape: diamond, x: 111, y: 371, w: 25, h: 25, color_name: cyan }
 
   subway_enter_2:
     address: matrix/3/8
     name: Subway Enter 2
+    layout:
+      - { shape: diamond, x: 111, y: 391, w: 25, h: 25, color_name: cyan }
 
   right_shooter_lane:
     address: matrix/4/1
     name: Right Shooter Lane
     sort_name: Shooter Lane, Right
     manual_name: Right Ball Shooter
+    layout:
+      - { shape: diamond, x: 540, y: 769, w: 25, h: 25, color_name: cyan }
 
   right_outlane:
     address: matrix/4/2
     name: Right Outlane
     sort_name: Outlane, Right
+    layout:
+    - { shape: diamond, x: 489, y: 608, w: 25, h: 25, color_name: cyan }
 
   outer_right_return_lane:
     address: matrix/4/3
     name: Outer Right Return Lane
     sort_name: Return Lane, Outer Right
     manual_name: Outside Right Return
+    layout:
+      - { shape: diamond, x: 461, y: 608, w: 25, h: 25, color_name: cyan }
 
   super_game_button:
     address: matrix/4/4
     name: Super Game Button
+    layout:
+      - { shape: diamond, x: 59, y: 811, w: 25, h: 25, color_name: cyan }
 
   switch_45:
     address: matrix/4/5
@@ -310,44 +377,62 @@ switches:
     address: matrix/5/1
     name: Left Sling
     sort_name: Sling, Left
+    layout:
+      - { shape: diamond, x: 220, y: 607, w: 25, h: 25, color_name: cyan }
 
   right_sling:
     address: matrix/5/2
     name: Right Sling
     sort_name: Sling, Right
+    layout:
+      - { shape: diamond, x: 385, y: 607, w: 25, h: 25, color_name: cyan }
 
   captive_ball_2:
     address: matrix/5/3
     name: Captive Ball 2
+    layout:
+      - { shape: diamond, x: 457, y: 342, w: 25, h: 25, color_name: cyan }
 
   drop_target_j:
     address: matrix/5/4
     normally: closed
     name: Drop Target J
+    layout:
+      - { shape: diamond, x: 240, y: 291, w: 25, h: 25, color_name: cyan }
 
   drop_target_u:
     address: matrix/5/5
     normally: closed
     name: Drop Target U
+    layout:
+      - { shape: diamond, x: 260, y: 281, w: 25, h: 25, color_name: cyan }
 
   drop_target_d:
     address: matrix/5/6
     normally: closed
     name: Drop Target D
+    layout:
+      - { shape: diamond, x: 280, y: 271, w: 25, h: 25, color_name: cyan }
 
   drop_target_g:
     address: matrix/5/7
     normally: closed
     name: Drop Target G
+    layout:
+      - { shape: diamond, x: 300, y: 261, w: 25, h: 25, color_name: cyan }
 
   drop_target_e:
     address: matrix/5/8
     normally: closed
     name: Drop Target E
+    layout:
+      - { shape: diamond, x: 320, y: 251, w: 25, h: 25, color_name: cyan }
 
   globe_position_1:
     address: matrix/6/1
     name: Globe Position 1
+    layout:
+      - { shape: diamond, x: 248, y: 121, w: 25, h: 25, color_name: cyan }
 
   globe_exit:
     address: matrix/6/2
@@ -360,12 +445,16 @@ switches:
     normally: closed
     name: Planet Enter
     manual_name: Left Ramp to Lock
+    layout:
+      - { shape: diamond, x: 317, y: 105, w: 25, h: 25, color_name: cyan }
 
   left_ramp_exit:
     address: matrix/6/4
     normally: closed
     name: Left Ramp Exit
     sort_name: Ramp, Left Exit
+    layout:
+      - { shape: diamond, x: 447, y: 56, w: 25, h: 25, color_name: cyan }
 
   switch_65:
     address: matrix/6/5
@@ -377,21 +466,29 @@ switches:
     normally: closed
     name: Center Ramp Exit
     sort_name: Ramp, Center Exit
+    layout:
+      - { shape: diamond, x: 237, y: 48, w: 25, h: 25, color_name: cyan }
 
   left_ramp_enter:
     address: matrix/6/7
     normally: closed
     name: Left Ramp Enter
     sort_name: Ramp, Left Enter
+    layout:
+      - { shape: diamond, x: 187, y: 263, w: 25, h: 25, color_name: cyan }
 
   captive_ball_3:
     address: matrix/6/8
     name: Captive Ball 3
+    layout:
+      - { shape: diamond, x: 462, y: 267, w: 25, h: 25, color_name: cyan }
 
   arm_far_right:
     address: matrix/7/1
     name: Arm Far Right
     manual_name: Magnet Over Ring
+    layout:
+      - { shape: diamond, x: 152, y: 174, w: 25, h: 25, color_name: cyan }
 
   outer_loop_right:
     address: matrix/7/2
@@ -399,34 +496,46 @@ switches:
     name: Outer Loop Right
     sort_name: Loop, Outer Right
     manual_name: Top Right Opto
+    layout:
+      - { shape: diamond, x: 439, y: 213, w: 25, h: 25, color_name: cyan }
 
   left_popper:
     address: matrix/7/3
     normally: closed
     name: Left Popper
     sort_name: Popper, Left
+    layout:
+      - { shape: diamond, x: 115, y: 435, w: 25, h: 25, color_name: cyan }
 
   right_popper:
     address: matrix/7/4
     normally: closed
     name: Right Popper
     sort_name: Popper, Right
+    layout:
+      - { shape: diamond, x: 413, y: 129, w: 25, h: 25, color_name: cyan }
 
   top_ramp_exit:
     address: matrix/7/5
     normally: closed
     name: Top Ramp Exit
     sort_name: Ramp, Top Exit
+    layout:
+      - { shape: diamond, x: 374, y: 123, w: 25, h: 25, color_name: cyan }
 
   right_ramp_exit:
     address: matrix/7/6
     normally: closed
     name: Right Ramp Exit
     sort_name: Ramp, Right Exit
+    layout:
+      - { shape: diamond, x: 380, y: 95, w: 25, h: 25, color_name: cyan }
 
   globe_position_2:
     address: matrix/7/7
     name: Globe Position 2
+    layout:
+      - { shape: diamond, x: 218, y: 121, w: 25, h: 25, color_name: cyan }
 
   switch_78:
     address: matrix/7/8
@@ -437,37 +546,51 @@ switches:
     address: matrix/8/1
     normally: closed
     name: Trough 1
+    layout:
+      - { shape: diamond, x: 362, y: 773, w: 25, h: 25, color_name: cyan }
 
   trough_2:
     address: matrix/8/2
     normally: closed
     name: Trough 2
+    layout:
+      - { shape: diamond, x: 387, y: 773, w: 25, h: 25, color_name: cyan }
 
   trough_3:
     address: matrix/8/3
     normally: closed
     name: Trough 3
+    layout:
+      - { shape: diamond, x: 412, y: 773, w: 25, h: 25, color_name: cyan }
 
   trough_4:
     address: matrix/8/4
     normally: closed
     name: Trough 4
+    layout:
+      - { shape: diamond, x: 437, y: 773, w: 25, h: 25, color_name: cyan }
 
   trough_5:
     address: matrix/8/5
     normally: closed
     name: Trough 5
+    layout:
+      - { shape: diamond, x: 462, y: 773, w: 25, h: 25, color_name: cyan }
 
   trough_6:
     address: matrix/8/6
     normally: closed
     name: Trough 6
+    layout:
+      - { shape: diamond, x: 487, y: 773, w: 25, h: 25, color_name: cyan }
 
   trough_jam:
     address: matrix/8/7
     normally: closed
     name: Trough Jam
     manual_name: Top Trough
+    layout:
+      - { shape: diamond, x: 487, y: 743, w: 25, h: 25, color_name: red }
 
   switch_88:
     address: matrix/8/8

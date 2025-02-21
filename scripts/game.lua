@@ -68,4 +68,5 @@ function pub.manual_launch()
     spin.play_sound(jd.MOTORCYCLE_START)
 end
 
+
 return pub

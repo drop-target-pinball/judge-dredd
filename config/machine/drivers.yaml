@@ -14,6 +14,8 @@ drivers:
     kind: solenoid
     name: Left Popper
     sort_name: Popper, Left
+    layout:
+      - { shape: circle, x: 114, y: 434, w: 28, h: 28, color_name: pink }
     components:
     - !jumper J130-2
     - !transistor Q80
@@ -26,12 +28,14 @@ drivers:
     name: Right Popper
     sort_name: Popper, Right
     layout:
-      - { shape: circle, x: 369, y: 196, w: 25, h: 25, color_name: pink }
+      - { shape: circle, x: 412, y: 128, w: 23, h: 23, color_name: pink }
 
   globe_arm:
     address: driver/4
     kind: general
     name: Globe Arm
+    layout:
+      - { shape: rect, x: 125, y: 41, w: 49, h: 140, color_name: pink }
 
   drop_target_reset:
     address: driver/5
@@ -42,6 +46,8 @@ drivers:
     address: driver/6
     kind: general
     name: Globe Motor
+    layout:
+      - { shape: rect, x: 185, y: 226, w: 121, h: 28, color_name: pink }
 
   knocker:
     address: driver/7
@@ -53,12 +59,16 @@ drivers:
     kind: solenoid
     name: Right Shooter Lane
     sort_name: Shooter Lane, Right
+    layout:
+      - { shape: rect, x: 540, y: 809, w: 38, h: 54, color_name: pink }
 
   left_shooter_lane:
     address: driver/9
     kind: solenoid
     name: Left Shooter Lane
     sort_name: Shooter Lane, Left
+    layout:
+      - { shape: rect, x: 60, y: 802, w: 42, h: 64, color_name: pink }
 
   drop_target_trip:
     address: driver/10
@@ -69,6 +79,8 @@ drivers:
     address: driver/11
     kind: solenoid
     name: Diverter
+    layout:
+      - { shape: rect, x: 298, y: 36, w: 40, h: 30, color_name: pink }
 
   driver_12:
     address: driver/12
@@ -80,6 +92,8 @@ drivers:
     address: driver/13
     kind: solenoid
     name: Trough
+    layout:
+      - { shape: rect, x: 517, y: 773, w: 23, h: 26, color_name: pink }
 
   driver_14:
     address: driver/14
@@ -92,11 +106,14 @@ drivers:
     kind: solenoid
     name: Left Sling
     sort_name: Sling, Left
+    layout:
+      - { shape: rect, x: 193, y: 609, w: 28, h: 51, color_name: pink }
 
   right_sling:
     address: driver/16
     kind: solenoid
     name: Right Sling
     sort_name: Sling, Right
-
+    layout:
+      - { shape: rect, x: 411, y: 609, w: 28, h: 51, color_name: pink }
 
