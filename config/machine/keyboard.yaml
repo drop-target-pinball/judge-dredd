@@ -32,11 +32,14 @@ keyboard:
       name: start_button
       active: false
 
+  # Drain
+  - key: delete
+    down: !switch_updated
+      name: trough_1
+      active: true
+
   # (s)niper tower
   - key: s
     down: !switch_updated
       name: right_popper
       active: true
-    up: !switch_updated
-      name: right_popper
-      active: false

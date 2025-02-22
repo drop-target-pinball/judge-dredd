@@ -207,6 +207,7 @@ function pub.sniper_success()
     spin.sleep(2)
     spin.play_sound(jd.SUCCESS_SNIPER)
     blinking_score("SNIPER TOTAL")
+    spin.pulse_driver(jd.RIGHT_POPPER)
     spin.gfx(jd.DMD, 1).new(spin.CLEAR)
 end
 
