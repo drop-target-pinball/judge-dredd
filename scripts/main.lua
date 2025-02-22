@@ -8,6 +8,7 @@ function pub.main()
     while true do
         spin.run(jd.ATTRACT)
         spin.wait(spin.for_eq(jd.GAME_ACTIVE, true))
+        spin.reset_lights()
         spin.run(jd.GAME)
         spin.wait(spin.forever())
     end

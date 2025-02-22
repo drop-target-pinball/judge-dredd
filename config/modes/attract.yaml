@@ -14,4 +14,6 @@ scripts:
   attract_hst_3:        { module: attract, group: attract_slide, replace: true }
   attract_hst_4:        { module: attract, group: attract_slide, replace: true }
 
+  attract_cycle_lights: { module: attract, group: attract }
+
   test_attract:         { module: attract, test: true }

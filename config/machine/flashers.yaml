@@ -45,7 +45,7 @@ drivers:
       - { shape: rect, x: 381, y: 361, w: 22, h: 20, color_name: blue }
       - { shape: rect, x: 429, y: 375, w: 22, h: 20, color_name: red  }
 
-  blackout:
+  blackout_2x:
     address: driver/23
     kind: flasher
     name: Blackout
