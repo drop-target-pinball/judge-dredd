@@ -1,0 +1,15 @@
+mock:
+  locks:
+    - switches: [trough_6, trough_5, trough_4, trough_3, trough_2, trough_1]
+      eject: trough
+      eject_to: right_shooter_lane
+      default: 6
+    - switches: [right_shooter_lane]
+      eject: right_shooter_lane
+    - switches: [left_shooter_lane]
+      eject: left_shooter_lane
+    - switches: [right_popper]
+      eject: right_popper
+    - switches: [left_popper]
+      eject: left_popper
+
