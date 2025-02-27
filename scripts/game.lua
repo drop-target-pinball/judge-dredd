@@ -23,6 +23,9 @@ function pub.game()
 end
 
 function pub.plunge()
+    if not spin.switches[jd.RIGHT_SHOOTER_LANE].active then
+        spin.pulse_driver(jd.TROUGH)
+    end
     spin.run(jd.PLUNGE_AUDIO)
     spin.wait(spin.for_switch(jd.RIGHT_FIRE_BUTTON))
     spin.run(jd.MANUAL_LAUNCH)

@@ -513,7 +513,7 @@ drivers:
     layout:
       - { shape: rect, x: 170, y: 5, w: 15, h: 15, color_name: white }
 
-  gi_1:
+  gi_3:
     address: gi/3
     kind: gi
     name: General Illumination 3

@@ -1,8 +1,9 @@
 module_name: jd
 
 scripts:
-  init: { module: init }
-  main: { module: main }
+  init:   { module: init }
+  gi_on:  { module: init }
+  main:   { module: main }
 
 std:
   - dmd
