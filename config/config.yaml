@@ -1,21 +1,24 @@
 module_name: jd
+max_players: 4
 
 scripts:
   init:   { module: init }
   gi_on:  { module: init }
   main:   { module: main }
 
+
 std:
   - dmd
   - game
-  - player_4
   - service
+
 
 video:
   dmd:
     width: 128
     height: 32
     layers: 2
+
 
 sdl:
   audio:
@@ -31,9 +34,9 @@ sdl:
   monitor:
     playfield: monitor/judge-dredd-648x864.jpg
 
-vars:
-  free_play:  { kind: !bool true }
 
+settings:
+  free_play:    { kind: !bool true }
 
 
 

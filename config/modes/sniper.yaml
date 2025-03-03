@@ -41,9 +41,10 @@ vars:
   sniper_score:       { kind: !int 0 }
   sniper_fall_timer:  { kind: !int 0 }
 
-namespaces:
-  player:
-    sniper_bonus:     { kind: !int 0 }
+
+player:
+  sniper_bonus:     { kind: !int 0 }
+
 
 vocals:
   aaaaah:

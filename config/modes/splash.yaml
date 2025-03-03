@@ -2,6 +2,7 @@ scripts:
   splash: { module: splash, group: main, replace: true }
   test_splash: { module: splash, test: true }
 
+
 music:
   boot:
     path: boot/boot.ogg

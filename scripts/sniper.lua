@@ -1,4 +1,5 @@
 local spin = require('spin')
+local vars = spin.vars
 local std = require('std')
 local jd = require('jd')
 
@@ -12,7 +13,7 @@ local function blinking_score(title)
         gfx.draw_text_y(-2, title)
         if on then
             gfx.font = jd.DMD_14X10
-            gfx.draw_text_y(12, spin.format_score(spin.player().int(jd.SNIPER_BONUS)))
+            gfx.draw_text_y(12, spin.format_score(spin.player().sniper_bonus))
         end
     end
 
@@ -25,6 +26,7 @@ local function blinking_score(title)
 end
 
 function pub.sniper()
+    local player = spin.player();
     spin.reset_timer(jd.SNIPER_SCORE)
     spin.run(jd.SNIPER_DRAW)
     spin.run(jd.SNIPER_AUDIO)
@@ -41,7 +43,7 @@ function pub.sniper()
     if kind == std.BALL_ARRIVED then
         spin.stop_timer(jd.SNIPER_SCORE)
         spin.run(jd.SNIPER_FALL)
-        spin.player().add_int(jd.SNIPER_BONUS, spin.int(jd.SNIPER_SCORE))
+        player.sniper_bonus = player.sniper_bonus + vars.sniper_score
     else
         spin.kill_group(jd.SNIPER)
         spin.play_music(jd.MAIN_THEME)
@@ -85,7 +87,7 @@ function pub.sniper_score_draw()
         gfx.font = jd.PF_ARMA_FIVE_8
         gfx.draw_text_y(-2, "SNIPER")
         gfx.font = jd.DMD_14X10
-        gfx.draw_text_y(12, spin.format_score(spin.int(jd.SNIPER_SCORE)))
+        gfx.draw_text_y(12, spin.format_score(vars.sniper_score))
         spin.wait(spin.for_any(std.TICK))
     end
 end
@@ -106,6 +108,7 @@ end
 
 -------------------------------------------------------------------------------
 function pub.sniper_fall()
+    local player = spin.player()
     spin.reset_timer(jd.SNIPER_FALL)
     spin.stop_driver(jd.AWARD_SNIPER)
 
@@ -122,7 +125,7 @@ function pub.sniper_fall()
         spin.for_any(std.TIMER_EXPIRED)
     )
     if kind == std.BALL_ARRIVED then
-        spin.player().add_int(jd.SNIPER_BONUS, spin.int(jd.SNIPER_SCORE))
+        player.sniper_bonus = player.sniper_bonus + vars.sniper_score
         spin.stop_timer(jd.SNIPER_FALL)
         spin.run(jd.SNIPER_SUCCESS)
     else
@@ -154,7 +157,7 @@ function pub.sniper_fall_timer_draw()
         gfx.draw_text_x(5, spin.int(jd.SNIPER_FALL_TIMER))
 
         gfx.font = jd.DMD_09X7
-        gfx.draw_text_x(dmd.width - 2, spin.format_score(spin.int(jd.SNIPER_SCORE)), {right=true})
+        gfx.draw_text_x(dmd.width - 2, spin.format_score(vars.sniper_score), {right=true})
         spin.wait(spin.for_any(std.TICK))
     end
 end
@@ -182,10 +185,12 @@ function pub.sniper_failure()
     spin.stop_driver(jd.AWARD_SNIPER)
 
     local gfx = spin.gfx(jd.DMD, 1).new(spin.OFF)
+    local player = spin.player()
+
     gfx.font = jd.PF_ARMA_FIVE_8
     gfx.draw_text_y(-2, "SNIPER")
     gfx.font = jd.DMD_14X10
-    gfx.draw_text_y(12, spin.format_score(spin.player().int(jd.SNIPER_BONUS)))
+    gfx.draw_text_y(12, spin.format_score(player.sniper_bonus))
 
     spin.stop_vocal()
     spin.play_music(jd.MAIN_THEME)

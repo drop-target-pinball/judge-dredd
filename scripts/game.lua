@@ -1,4 +1,5 @@
 local spin = require("spin")
+local vars = spin.vars
 local std = require("std")
 local jd = require("jd")
 
@@ -34,7 +35,7 @@ end
 
 function pub.plunge_audio()
     spin.play_music(jd.PLUNGE_LOOP)
-    if spin.int(jd.PLAYER) == 1 and spin.int(jd.BALL) == 1 and not spin.bool(jd.IS_EXTRA_BALL) then
+    if vars.player == 1 and vars.ball == 1 and not vars.is_extra_ball then
         spin.play_vocal(jd.LAW_MASTER_COMPUTER_ONLINE_WELCOME_ABOARD)
     end
     spin.sleep(7)
