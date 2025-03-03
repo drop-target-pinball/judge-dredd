@@ -154,7 +154,7 @@ function pub.sniper_fall_timer_draw()
         gfx.draw_text_y(dmd.height, "SHOOT TOWER", {bottom=true})
 
         gfx.font = jd.DMD_14X10
-        gfx.draw_text_x(5, spin.int(jd.SNIPER_FALL_TIMER))
+        gfx.draw_text_x(5, vars.sniper_fall_timer)
 
         gfx.font = jd.DMD_09X7
         gfx.draw_text_x(dmd.width - 2, spin.format_score(vars.sniper_score), {right=true})
@@ -222,7 +222,7 @@ local test = require("test")
 function pub.test_sniper_failure()
     spin.run(jd.SNIPER)
     spin.sleep(8)
-    spin.set(jd.SNIPER_SCORE, 3550700)
+    vars.sniper_score = 3550700
     test.wait(10, "script end", spin.for_script(jd.SNIPER))
 end
 
@@ -231,7 +231,7 @@ function pub.test_sniper_fall_failure()
     spin.sleep(6)
     spin.switch_updated(jd.RIGHT_POPPER)
     spin.sleep(7)
-    spin.set(jd.SNIPER_FALL_TIMER, 2)
+    vars.sniper_fall_timer = 2
     test.wait(10, "script end", spin.for_script(jd.SNIPER_FAILURE))
 end
 
