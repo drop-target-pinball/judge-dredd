@@ -4,7 +4,6 @@ Judge Dredd implementation using the Super Pinball System.
 
 Work in progress
 
-
 ## License
 
-MIT
+Apache Software License, version 2.0
