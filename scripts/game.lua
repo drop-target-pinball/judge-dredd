@@ -55,7 +55,7 @@ function pub.plunge_use_fire_button_to_launch_ball()
     }
 
     for i=0,7*4 do
-        gfx.new(spin.OFF)
+        gfx.fill(spin.BLACK)
         gfx.font = jd.PF_RONDA_SEVEN_BOLD_8
         gfx.draw_text_y(3, "USE")
         gfx.draw_text_y(14, "FIRE BUTTON")
@@ -63,7 +63,7 @@ function pub.plunge_use_fire_button_to_launch_ball()
         gfx.draw_text_x(110, chevrons[(i % 4) + 1])
         spin.sleep(0.1)
     end
-    gfx.new(spin.CLEAR)
+    gfx.fill(spin.CLEAR)
 end
 
 function pub.manual_launch()
